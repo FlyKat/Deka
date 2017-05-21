@@ -3,45 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title>БиоДека</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__top">
-        <div class="page-header__logo" href="#">БиоДека</div>
-        <nav class="page-header__nav">
-          <a class="page-header__nav-link" href="#">Главная</a>
-          <a class="page-header__nav-link" href="#">Акция</a>
-          <a class="page-header__nav-link" href="#">Все предложения</a>
-          <a class="page-header__nav-link" href="#">Преимущества</a>
-          <a class="page-header__nav-link" href="#">Как работает</a>
-          <a class="page-header__nav-link" href="#">Галерея</a>
-          <a class="page-header__nav-link" href="#">Контаткты</a>
-        <nav>
-        <a class="page-header__top-phone" href="tel:88124218013">8 (812) 421-80-13<a>
+     <div class="page-header__top">
+        <div class="page-header__top-inner">
+          <a class="page-header__logo" href="#">
+            <img src="img/logo_thvd5l3.png"  alt="БиоДека" width=151" height="114">
+          </a>
+          <nav class="page-header__nav">
+            <a class="page-header__nav-link" href="#">Главная</a>
+            <a class="page-header__nav-link" href="#">Акция</a>
+            <a class="page-header__nav-link" href="#">Все предложения</a>
+            <a class="page-header__nav-link" href="#">Преимущества</a>
+            <a class="page-header__nav-link" href="#">Как работает</a>
+            <a class="page-header__nav-link" href="#">Галерея</a>
+            <a class="page-header__nav-link" href="#">Контакты</a>
+          </nav>
+          <a class="page-header__top-phone" href="tel:88124218013">8 (812) 421-80-13<a>
+        </div>
       </div>
       <section class="page-header__intro">
-        <p class="page-header__intro-manufacturer">Производитель &laquo;БиоДека&raquo; в Санкт-Петербурге и Леню Области</p>
-        <p class="page-header__intro-office-hours">Ежедневно с 9:00 до 22:00 заявки принимаются круглосуточно</p>
-        <p class="page-header__intro-phone">8 (812) 458-90-98
-           <a class="page-header__intro-link" href="#">Заказать звонок</a>
-        </p>
-        <h1 class="page-header__intro-title">Автономная канализация &laquo;БиоДека&raquo;</h1>
-        <div class="page-header__info">
-          <p class="page-header__info-title">Получите бесплатный расчет сметы уже сегодня</p>
-          <span class="page-header_info-subtile">с учётом:</span>
-          <ul class="page-header__info-list">
-            <li class="page-header__info-item">типа грунта</li>
-            <li class="page-header__info-item">глубины подводных коммуникаций</li>
-            <li class="page-header__info-item">уровня грунтовых вод</li>
-            <li class="page-header__info-item">выбора модели станции</li>
-          </ul>
-          <a class="btn  page-header__intro-btn" href="#">Получить смету сейчас</a>
-          <div class="page-header__intro-img">
-            <img src="img//biodeka-5.png" alt="Изображение товара" width="487" height="487">
-        </div>
-        <div class="promo-video">
-          <a class="promo-video__btn-play" href="#">Play</a>
+        <div class="page-header__intro-inner">
+          <div class="page-header__info">
+            <p class="page-header__info-manufacturer">Производитель &laquo;BioDeka&raquo;<br> в Санкт-Петербурге и Лен. Области</p>
+            <!--<p class="page-header__info-office-hours">Ежедневно с 9:00 до 22:00 заявки&nbsp;принимаются&nbsp;круглосуточно</p>-->
+            <p class="page-header__info-phone">8 (812) 458-90-98
+              <a class="page-header__info-link" href="#">Заказать звонок</a>
+            </p>
+          </div>
+          <div class=page-header__slogan>
+            <h1 class="page-header__title">Автономная канализация &laquo;БиоДека&raquo;</h1>
+            <p class="page-header__note">Скидка 20% на монтаж до 31 мая</p>
+          </div>
+          <div class="page-header__offer">
+            <p class="page-header__offer-title">Получите бесплатный расчет сметы уже сегодня</p>
+            <span class="page-header_offer-subtile">с учётом:</span>
+            <ul class="page-header__offer-list">
+              <li class="page-header__offer-item">типа грунта</li>
+              <li class="page-header__offer-item">глубины подвода коммуникации</li>
+              <li class="page-header__offer-item">уровня грунтовых вод</li>
+              <li class="page-header__offer-item">выбора модели станции</li>
+            </ul>
+            <a class="btn  page-header__intro-btn" href="#">Получить смету сейчас</a>
+            <div class="page-header__intro-img">
+              <img src="img//biodeka-5.png" alt="Изображение товара" width="487" height="487">
+            </div>
+            <div class="promo-video">
+               <a class="promo-video__btn-play" href="#">Play</a>
+            </div>
         </div>
       </section>
     </header>
@@ -1393,7 +1406,7 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__logo">БиоДека</div>
+      <a class="page-footer__logo">БиоДека</a>
        <div class=""
     </footer>
   </body>
