@@ -1,0 +1,27 @@
+.counter__text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.counter__text span {
+  color: #a52a2a;
+}
+
+.counter__clock {
+  display: flex;
+  padding: 0;
+  font-size: 42px;
+  line-height: 52px;
+  color: #333;
+  list-style: none;
+}
+
+.counter__clock-item {
+  display: flex;
+}
+
+.counter__clock-label {
+  font-size: 11px;
+  line-height: 11px;
+}
+

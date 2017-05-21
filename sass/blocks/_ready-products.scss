@@ -1,0 +1,37 @@
+.ready-products {
+  background-image: url('../img/8-1-111.jpg');
+  background-repeat: no-repeat;
+  background_position: 50% 100%;
+}
+
+.ready-products__inner {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.ready-products__title {
+  font-size: 22px;
+  font-wight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.ready-products__group-title {
+  font-size: 18px;
+  font-wight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.ready-products__group-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 870px;
+}
+
+.ready-products__note {
+  color: #fff;
+}
+
+

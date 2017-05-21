@@ -3,3 +3,9 @@
   padding: 0 15px;
   width: 1170px;
 }
+
+@mixin img-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}

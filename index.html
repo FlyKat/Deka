@@ -23,14 +23,14 @@
             <a class="page-header__nav-link" href="#">Галерея</a>
             <a class="page-header__nav-link" href="#">Контакты</a>
           </nav>
-          <a class="page-header__top-phone" href="tel:88124218013">8 (812) 421-80-13<a>
+          <a class="page-header__top-phone" href="tel:88124218013">8 (812) 421-80-13</a>
         </div>
       </div>
       <section class="page-header__intro">
         <div class="page-header__intro-inner">
           <div class="page-header__info">
             <p class="page-header__info-manufacturer">Производитель &laquo;BioDeka&raquo;<br> в Санкт-Петербурге и Лен. Области</p>
-            <!--<p class="page-header__info-office-hours">Ежедневно с 9:00 до 22:00 заявки&nbsp;принимаются&nbsp;круглосуточно</p>-->
+            <p class="page-header__info-office-hours">Ежедневно с 9:00 до 22:00 заявки&nbsp;принимаются&nbsp;круглосуточно</p>
             <p class="page-header__info-phone">8 (812) 458-90-98
               <a class="page-header__info-link" href="#">Заказать звонок</a>
             </p>
@@ -41,7 +41,7 @@
           </div>
           <div class="page-header__offer">
             <p class="page-header__offer-title">Получите бесплатный расчет сметы уже сегодня</p>
-            <span class="page-header_offer-subtile">с учётом:</span>
+            <p class="page-header__offer-subtile">с учётом:</p>
             <ul class="page-header__offer-list">
               <li class="page-header__offer-item">типа грунта</li>
               <li class="page-header__offer-item">глубины подвода коммуникации</li>
@@ -60,69 +60,104 @@
     </header>
     <main>
       <div class="action">
-        <div class="action__info">
-          <img src="">
-          <p class="action__text"><span>До 31 мая</span>при заказе канализации &laquo;БиоДека&raquo; под ключ Вы получаете в подарок:</p>
-          <ul class="action__presents">
-            <li class="action__present">Доставка</li>
-            <li class="action__present">Сервисное обслуживание</li>
-            <li class="action__present">Проект в AutoCAD</li>
-          </ul>
-          <div class="action__counter">
+        <div class="action__inner">
+          <div class="action__info">
+            <div class="action__img">
+               <div class="action__mark">Акция</div>
+               <img src="img/offer-obschaya.jpg" alt="Изображение товара" width="335" height="219">
+            </div>
+            <p class="action__text"><span>До 31 мая</span> при заказе канализации &laquo;БиоДека&raquo; под ключ Вы получите в&nbsp;подарок:</p>
+            <ul class="action__presents">
+              <li class="action__present">Доставка</li>
+              <li class="action__present">Сервисное обслуживание</li>
+              <li class="action__present">Проект в AutoCAD</li>
+            </ul>
+            <div class="counter">
+              <p class="counter__text">До конца <span>акции</span> осталось:</p>
+              <ul class="counter__clock">
+                <li class="counter__clock-item">
+                  <div class="counter__clock-days">1</div>
+                  <div class="counter__clock-days">9</div>
+                  <div class="counter__clock-label">дней</div>
+                </li>
+                <li class="counter__clock-separator">:</li>
+                <li class="counter__clock-item">
+                  <div class="counter__clock-hours">1</div>
+                  <div class="counter__clock-hours">2</div>
+                  <div class="counter__clock-label">часов</div>
+                </li>
+                <li class="counter__clock-separator">:</li>
+                <li class="counter__clock-item">
+                  <div class="counter__clock-minutes">5</div>
+                  <div class="counter__clock-minutes">4</div>
+                  <div class="counter__clock-label">минут</div>
+                </li>
+                <li class="counter__clock-separator">:</li>
+                <li class="counter__clock-item">
+                  <div class="counter__clock-seconds">4</div>
+                  <div class="counter__clock-seconds">6</div>
+                  <div class="counter__clock-label">секунд</div>
+                </li>
+            </div>
           </div>
-        </div>
-        <div class="application">
-          <p class="applicattion__text"><span>Оставьте заявку сейчас<span>чтобы узнать подробнее об акции и получить свои подарки </p>
-          <form class="application__form">
-            <input class="application__form-input" type="text" name="name" id="name" placeholder="Ваше имя*" required>
-            <input class="application__form-input" type="tel" name="tel" id="tel" placeholder="Ваш тедлефон*" required>
-            <button class="btn  application__form-btn" type="submit">Узнать об акции подробнее</button>
-          </form>
-          <p class="application__note">Ваши данные не будут переданы третьим лицам</p>
+          <div class="application">
+            <p class="application__text application__text--big">Оставьте заявку сейчас,</p>
+            <p class="application__text">чтобы узнать подробнее об акции и получить свои подарки </p>
+            <form class="application__form">
+              <input class="application__form-input" type="text" name="name" id="name" placeholder="Введите Ваше имя*" required>
+              <input class="application__form-input" type="tel" name="tel" id="tel" placeholder="Введите телефон*" required>
+              <button class="btn  application__form-btn" type="submit">Узнать об акции подробнее</button>
+            </form>
+            <p class="application__note">Ваши данные не будут переданы третьим лицам</p>
+          </div>
         </div>
       </div>
       <section class="ready-products">
-        <h2 class="ready-products__title">Готовые решения под &laquo;под ключ&raquo;</h2>
-        <div class="ready-products__group">
-          <h3 class="ready-products__group-title">Очистное сооружение, доставка, материалы и монтаж</h3>
-          <article class="ready-product  ready-products__group-item">
-            <h4 class="ready-product__title">Для дома</h4>
-            <div class="ready-product__img">
-              <img src="img/bd-8-compressor.png" alt="Изображение товара" width="90" height="144">
+        <div class="ready-products__inner">
+          <h2 class="ready-products__title">Готовые решения под &laquo;под ключ&raquo;</h2>
+          <div class="ready-products__group">
+            <h3 class="ready-products__group-title">Очистное сооружение, доставка, материалы и монтаж</h3>
+            <div class="ready-products__group-wrap">
+              <article class="ready-product  ready-products__group-item">
+                <h4 class="ready-product__title">Для дома</h4>
+                <div class="ready-product__img">
+                  <img src="img/bd-8-compressor.png" alt="Изображение товара" width="90" height="144">
+                </div>
+                <div class="ready-product__price">
+                  <p class="ready-product__price-text">Монтаж под ключ за</p>
+                  <p class="ready-product__price-current"><span class="ready-product__price-old">116 250</span> 93 000 p.<sup>*</sup></p>
+                  <a class="ready-product__btn" hfef="#">Подробнее</a>
+                </div>
+                <a class="btn  ready-product__order-btn" href="#">Заказать монтаж</a>
+              </article>
+              <article class="ready-product  ready-products__group-item">
+                <h4 class="ready-product__title">Для дачи</h4>
+                <div class="ready-product__img">
+                  <img src="img/bd-5-compressor.png" alt="Изображение товара" width="71" height="144">
+                </div>
+                <div class="ready-product__price">
+                  <p class="ready-product__price-text">Монтаж под ключ за</p>
+                  <p class="ready-product__price-current"><span class="ready-product__price-old">106 125</span> 84 900 p.<sup>*</sup></p>
+                  <a class="ready-product__btn" hfef="#">Подробнее</a>
+                 </div>
+                 <a class="btn  ready-product__order-btn" href="#">Заказать монтаж</a>
+              </article>
+              <article class="ready-product  ready-products__group-item">
+                <h4 class="ready-product__title">Для коттеджа</h4>
+                <div class="ready-product__img">
+                  <img src="img/bd-10-compressor.png" alt="Изображение товара" width="97" height="144">
+                </div>
+                <div class="ready-product__price">
+                  <p class="ready-product__price-text">Монтаж под ключ за</p>
+                  <p class="ready-product__price-current"><span class="ready-product__price-old">116 250</span> 93 000 p.<sup>*</sup></p>
+                  <a class="ready-product__btn" hfef="#">Подробнее</a>
+                 </div>
+                <a class="btn  ready-product__order-btn" href="#">Заказать монтаж</a>
+              </article>
             </div>
-            <div class=ready-product__price"">
-              <p class="ready-product__price-text">Монтаж под ключ за</p>
-              <p class="ready-product__price-current"><span class="ready-product__price-old">116 250</span> 93 000 p.<sup>*</sup><p>
-              <a class="btn  btn--small" hfef="#">Подробнее</a>
-             </div>
-            <a class="btn" href="#">Заказать монтаж</a>
-          </article>
-          <article class="ready-product  rready-products__group-item">
-            <h4 class="ready-product__title">Для дачи</h4>
-            <div class="ready-product__img">
-              <img src="img/bd-5-compressor.png" alt="Изображение товара" width="71" height="144">
-            </div>
-            <div class=ready-product__price"">
-              <p class="ready-product__price-text">Монтаж под ключ за</p>
-              <p class="ready-product__price-current"><span class="ready-product__price-old">106 125</span> 84 900 p.<sup>*</sup><p>
-              <a class="btn  btn--small" hfef="#">Подробнее</a>
-             </div>
-            <a class="btn " href="#">Заказать монтаж</a>
-          </article>
-          <article class="ready-product  ready-products__group-item">
-            <h4 class="ready-product__title">Для коттеджа</h4>
-            <div class="ready-product__img">
-              <img src="img/bd-10-compressor.png" alt="Изображение товара" width="97" height="144">
-            </div>
-            <div class=ready-product__price"">
-              <p class="ready-product__price-text">Монтаж под ключ за</p>
-              <p class="ready-product__price-current"><span class="ready-product__price-old">116 250</span> 93 000 p.<sup>*</sup><p>
-              <a class="btn  btn--small" hfef="#">Подробнее</a>
-             </div>
-            <a class="btn " href="#">Заказать монтаж</a>
-          </article>
-          <p class="ready-products__note">*Это минимальная розничная стоимость монтажа под ключ, установленная производителем. </p>
-          <p class="ready-products__note">Но мы также включили в эту сумму: выезд мастера на замер, доставку станции и прокладку 20 м. труды.</p>
+            <p class="ready-products__note">*Это минимальная розничная стоимость монтажа под ключ, установленная производителем. </p>
+            <p class="ready-products__note">Но мы также включили в эту сумму: выезд мастера на замер, доставку станции и прокладку 20 м. трубы.</p>
+          </div>
         </div>
       </section>
       <section class="results">
@@ -982,6 +1017,18 @@
         <h2 class="advantages__title"><span>Знаете ли вы о преимуществах,</span>станций биологической очистки &laquo;БиоДека&raquo;?</h2>
         <div class="advantages__img">
           <img src="img/bd5-prozr-compressor.png" alt="" width="322" height="608">
+          <div class="" data-title="днорежимность работы повышает простоту и надежность станции в сравнении с двухрежимными аналогами, т.к. для эксплуатации не требуется электромагнитный клапан или второй компрессор">
+            <img src="img/plus.png">
+          </div>
+          <div class="" data-title="Беспрецендентная глубина врезки подводящей трубы: до 180 см от поверхности грунта! Это будет для Вас отличным решением, если фановая труба выведена из дома слишком глубоко">
+            <img src="img/plus.png">
+          </div>
+          <div class="" data-title="бслуживание станции можно проводить самостоятельно, без участия специалиста, с помощью встроенной системы откачки или обычного дренажного насоса">
+            <img src="img/plus.png">
+          </div>
+          <div class="" data-title="Очищенную воду можно сбрасывать прямо в сточную канаву. Никакой доотчистки в виде полй фильтрации или жренажного колодца при этом не требуется">
+            <img src="img/plus.png">
+          </div>
         </div>
         <ul class="">
           <li class="">Качество очистки достигает 98%, поэтому полностью отсутствуют неприятные запахи в процессе эксплуатации станции</li>
@@ -991,18 +1038,6 @@
           <li class="">Для обслуживания не требуется вызов асениизатора, хватит и обычного дренажного насоса, чтобы откачать излишки ила</li>
           <li class="">Оптимальное соотношение цена-качество в своем ценовом сегменте</li>
         </ul>
-        <div class="" data-title="днорежимность работы повышает простоту и надежность станции в сравнении с двухрежимными аналогами, т.к. для эксплуатации не требуется электромагнитный клапан или второй компрессор">
-          <img src="img/plus.png">
-        </div>
-        <div class="" data-title="Беспрецендентная глубина врезки подводящей трубы: до 180 см от поверхности грунта! Это будет для Вас отличным решением, если фановая труба выведена из дома слишком глубоко">
-          <img src="img/plus.png">
-        </div>
-        <div class="" data-title="бслуживание станции можно проводить самостоятельно, без участия специалиста, с помощью встроенной системы откачки или обычного дренажного насоса">
-          <img src="img/plus.png">
-        </div>
-        <div class="" data-title="Очищенную воду можно сбрасывать прямо в сточную канаву. Никакой доотчистки в виде полй фильтрации или жренажного колодца при этом не требуется">
-          <img src="img/plus.png">
-        </div>
       </section>
       <section class="work-description">
         <h2 class="work-description__title"><span>Как будет работать</span> Ваша &laquo;Биодека&raquo;</h2>
