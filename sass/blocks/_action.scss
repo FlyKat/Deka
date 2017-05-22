@@ -4,8 +4,8 @@
 }
 
 .action__inner {
-  padding-left: 200px;
-  padding-right: 200px;
+  @include container();
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

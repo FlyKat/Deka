@@ -1,24 +1,40 @@
 .ready-products {
   background-image: url('../img/8-1-111.jpg');
   background-repeat: no-repeat;
-  background_position: 50% 100%;
+  background_position: 50% 50%;
+  background-size: cover;
 }
 
 .ready-products__inner {
-  padding-left: 200px;
-  padding-right: 200px;
+  @include container();
+  padding-top: 50px;
 }
 
 .ready-products__title {
+  margin-bottom: 50px;
   font-size: 22px;
   font-wight: 500;
   color: #fff;
   text-transform: uppercase;
 }
 
+.ready-products__group {
+  margin: 0 auto;
+  width: 970px;
+  min-height: 580px;
+  background-image: url('../img/dones-compressor.png');
+  background-repeat: no-repeat;
+  background-position: 50% 10px;
+  bakground-size: cover;
+}
+
 .ready-products__group-title {
+  margin: 0;
+  margin-left: 80px;
+  margin-bottom: 15px;
   font-size: 18px;
-  font-wight: 500;
+  font-weight: 500;
+  line-height: 27px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -27,11 +43,20 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 30px;
   width: 870px;
 }
 
 .ready-products__note {
+  margin: 0;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-left: 80px;
   color: #fff;
+}
+
+.ready-products__note:nth-of-type(2) {
+  padding-left: 8px;
 }
 
 

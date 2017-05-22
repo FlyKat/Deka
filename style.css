@@ -409,9 +409,10 @@ body {
   line-height: 1.2; }
 
 .page-header {
-  position: relative;
   background-image: url("../img/topimg-compressor_3jppsrd.jpg");
-  background-position: center; }
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .page-header__top {
   position: fixed;
@@ -425,13 +426,13 @@ body {
   background-repeat: no-repeat; }
 
 .page-header__top-inner {
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 1170px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1170px; }
 
 .page-header__logo {
   width: 130px; }
@@ -460,7 +461,6 @@ body {
   text-decoration: none; }
 
 .page-header__intro {
-  outline: 1px solid black;
   position: relative;
   color: #fff;
   background-color: #green; }
@@ -476,11 +476,11 @@ body {
   -ms-flex-pack: justify;
       justify-content: space-between;
   margin-top: 90px;
-  margin-bottom: 90px;
+  margin-bottom: 150px;
   margin-left: 100px;
-  padding-top: 40px;
+  padding-top: 25px;
   width: 970px;
-  font-weight: 300px; }
+  font-weight: 300; }
 
 .page-header__info-manufacturer {
   width: 300px; }
@@ -492,19 +492,24 @@ body {
 .page-header__info-phone {
   width: 150px;
   font-style: italic;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: right; }
 
 .page-header__info-link {
   color: #fff;
   font-style: normal;
+  font-weight: normal;
   text-decoration: none;
   border-bottom: 1px dotted #f4c001; }
 
 .page-header__slogan {
-  margin-bottom: 70px;
+  margin-bottom: 75px;
   margin-left: 80px;
-  width: 753px;
-  text-align: center; }
+  width: 805px;
+  min-height: 100px;
+  text-align: center;
+  background-image: url("../img/headram.png");
+  background-repeat: no-repeat; }
 
 .page-header__title {
   margin: 0;
@@ -535,18 +540,19 @@ body {
 
 .page-header__offer-list {
   padding-left: 70px;
-  margin-bottom: 30px; }
+  margin-bottom: 50px; }
 
 .page-header__offer-item {
   margin-bottom: 10px; }
 
 .page-header__intro-btn {
+  margin-bottom: 30px;
   margin-left: 50px; }
 
 .page-header__intro-img {
   position: absolute;
-  bottom: -35px;
-  left: 750px;
+  top: 300px;
+  right: 80px;
   width: 487px;
   height: 487px;
   z-index: 10; }
@@ -583,8 +589,10 @@ body {
   padding-top: 130px; }
 
 .action__inner {
-  padding-left: 200px;
-  padding-right: 200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 970px;
+  margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -707,21 +715,38 @@ body {
 .ready-products {
   background-image: url("../img/8-1-111.jpg");
   background-repeat: no-repeat;
-  background_position: 50% 100%; }
+  background_position: 50% 50%;
+  background-size: cover; }
 
 .ready-products__inner {
-  padding-left: 200px;
-  padding-right: 200px; }
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 970px;
+  padding-top: 50px; }
 
 .ready-products__title {
+  margin-bottom: 50px;
   font-size: 22px;
   font-wight: 500;
   color: #fff;
   text-transform: uppercase; }
 
+.ready-products__group {
+  margin: 0 auto;
+  width: 970px;
+  min-height: 580px;
+  background-image: url("../img/dones-compressor.png");
+  background-repeat: no-repeat;
+  background-position: 50% 10px;
+  bakground-size: cover; }
+
 .ready-products__group-title {
+  margin: 0;
+  margin-left: 80px;
+  margin-bottom: 15px;
   font-size: 18px;
-  font-wight: 500;
+  font-weight: 500;
+  line-height: 27px;
   color: #fff;
   text-transform: uppercase; }
 
@@ -731,10 +756,18 @@ body {
   -ms-flex-pack: justify;
       justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 30px;
   width: 870px; }
 
 .ready-products__note {
+  margin: 0;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-left: 80px;
   color: #fff; }
+
+.ready-products__note:nth-of-type(2) {
+  padding-left: 8px; }
 
 .ready-product {
   width: 280px;
@@ -796,3 +829,93 @@ body {
   margin-bottom: 20px;
   width: 220px;
   height: 50px; }
+
+.features__inner {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 970px; }
+
+.features__title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 500px;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 30px; }
+
+.features__title span {
+  text-transform: uppercase; }
+
+.features__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  width: 970px;
+  list-style: none; }
+
+.features__item {
+  position: relative;
+  width: 230px; }
+
+.features__item-icon {
+  width: 74px;
+  height: 60px;
+  padding: 5px 0;
+  text-align: center;
+  border: 3px solid #88d6a0;
+  border-radius: 15px; }
+
+.features__item-icon-text {
+  margin: 0;
+  font-size: 24px;
+  color: #67a77b; }
+
+.features__item-title {
+  width: 140px;
+  font-size: 18px;
+  font-weight: normal; }
+
+.features__item-info {
+  font-weight: 300; }
+
+.advantages__inner {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 970px;
+  margin: 0 auto; }
+
+.advantages__title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 500px;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 30px; }
+
+.advantages__title span {
+  text-transform: uppercase; }
+
+.advantages__info {
+  display: -ms-flexbox;
+  display: flex; }
+
+.advantages__img {
+  margin-left: 80px; }
+
+.advantages__list {
+  margin-left: 70px;
+  margin-top: 30px;
+  padding-left: 50px; }
+
+.advantages__item {
+  margin-bottom: 30px;
+  width: 375px;
+  font-weight: 300; }
+
+.advantages__item span {
+  font-weight: bold; }

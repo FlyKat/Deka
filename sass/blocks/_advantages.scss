@@ -1,0 +1,41 @@
+.advantages__inner {
+  @include container();
+  margin: 0 auto;
+}
+
+.advantages__title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 500px;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.advantages__title span {
+  text-transform: uppercase;
+}
+
+.advantages__info {
+  display: flex;
+}
+
+.advantages__img {
+  margin-left: 80px;
+}
+
+.advantages__list {
+  margin-left: 70px;
+  margin-top: 30px;
+  padding-left: 50px;
+}
+
+.advantages__item {
+  margin-bottom: 30px;
+  width: 375px;
+  font-weight: 300;
+}
+
+.advantages__item span {
+  font-weight: bold;
+}

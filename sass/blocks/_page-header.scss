@@ -1,7 +1,8 @@
 .page-header {
-  position: relative;
   background-image: url('../img/topimg-compressor_3jppsrd.jpg');
-  background-position: center;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page-header__top {
@@ -17,9 +18,11 @@
 }
 
 .page-header__top-inner {
-  @include container();
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1170px;
 }
 
 .page-header__logo {
@@ -51,31 +54,32 @@
 }
 
 .page-header__intro {
-  outline: 1px solid black;
   position: relative;
   color: #fff;
   background-color: #green;
 }
 
 .page-header__intro-inner {
-  @include container();
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1170px;
 }
 
 .page-header__info {
   display: flex;
   justify-content: space-between;
   margin-top: 90px;
-  margin-bottom: 90px;
+  margin-bottom: 150px;
   margin-left: 100px;
-  padding-top: 40px;
+  padding-top: 25px;
   width:970px;
-  font-weight: 300px;
+  font-weight: 300;
 }
 
 .page-header__info-manufacturer {
   width: 300px;
 }
- 
+
 .page-header__info-office-hours {
   width: 300px;
   text-align: center;
@@ -85,20 +89,25 @@
   width: 150px;
   font-style: italic;
   font-weight: bold;
+  text-align: right;
 }
 
 .page-header__info-link {
   color: #fff;
   font-style: normal;
+  font-weight: normal;
   text-decoration: none;
   border-bottom: 1px dotted #f4c001;
 }
 
 .page-header__slogan {
-  margin-bottom: 70px;
+  margin-bottom: 75px;
   margin-left: 80px;
-  width: 753px;
+  width: 805px;
+  min-height: 100px;
   text-align: center;
+  background-image: url('../img/headram.png');
+  background-repeat: no-repeat;
 }
 
 .page-header__title {
@@ -135,7 +144,7 @@
 
 .page-header__offer-list {
   padding-left: 70px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .page-header__offer-item {
@@ -143,13 +152,14 @@
 }
 
 .page-header__intro-btn {
+  margin-bottom: 30px;
   margin-left: 50px;
 }
 
 .page-header__intro-img {
   position: absolute;
-  bottom: -35px;
-  left: 750px;
+  top: 300px;
+  right: 80px;
   width: 487px;
   height: 487px;
   z-index: 10;
@@ -159,6 +169,6 @@
   top: 217px;
   left: 874px;
   width: 46px;
-  height: 40px;    
+  height: 40px;
   z-index: 1000;
 }
