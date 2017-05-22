@@ -1,0 +1,60 @@
+.consultation {
+  min-height: 428px;
+  background-image: url('../img/vopros-compressor_z0r0dml.jpg');
+  background-color: green;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.consultation__inner {
+  @include container();
+}
+
+.consultation__title {
+  margin: 0;
+  margin-bottom: 5px;
+  padding-top: 110px;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.consultation__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.consultation__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.consultation__form-input {
+  padding: 0 15px;
+  width: 285px;
+  height: 46px;
+  box-sizing: border-box;
+  border-radius: 23px;
+  border: none;
+  outline: none;
+
+  &:focus {
+    border-color: blue;
+    border-radius: 23px;
+  }
+}
+
+.consultation__form-btn {
+  width: 375px;
+  border: none;
+}
+
+.consultation__note {
+  font-weight: 300;
+  color: #fff;
+}

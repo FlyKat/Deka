@@ -1,0 +1,78 @@
+.service__inner {
+  @include container();
+}
+
+.service__title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 500px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.service__title span {
+  text-transform: uppercase;
+}
+
+.service__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+
+.service__item {
+  position: relative;
+  padding-top: 60px;
+  width: 470px;
+
+  &::before  {
+    content: "1";
+    position: absolute;
+    top: 0;
+    left:0;
+    padding-top: 5px;
+    width: 60px;
+    height: 55px;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #2b9540;
+  }
+
+  &--2 {
+    &::before {
+      content: "2";
+    }
+  }
+
+  &--3 {
+    &::before {
+      content: "3";
+    }
+  }
+
+  &--4 {
+    &::before {
+      content: "4";
+    }
+  }
+
+  &--5 {
+    &::before {
+      content: "5";
+    }
+  }
+}
+
+.service__item-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.service__item-text {
+  font-weight: 300;
+}

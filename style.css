@@ -883,6 +883,9 @@ body {
 .features__item-info {
   font-weight: 300; }
 
+.advantages {
+  border-bottom: 3px solid #2b9540; }
+
 .advantages__inner {
   margin: 0 auto;
   padding: 0 15px;
@@ -910,12 +913,305 @@ body {
 .advantages__list {
   margin-left: 70px;
   margin-top: 30px;
-  padding-left: 50px; }
+  padding-left: 50px;
+  list-style: none; }
 
 .advantages__item {
+  position: relative;
   margin-bottom: 30px;
   width: 375px;
   font-weight: 300; }
+  .advantages__item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -40px;
+    width: 32px;
+    height: 4px;
+    background-color: #2b9540; }
 
 .advantages__item span {
   font-weight: bold; }
+
+.advantages__img {
+  position: relative; }
+
+.advantages__else {
+  position: absolute;
+  top: 40px;
+  left: 170px; }
+  .advantages__else:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: 10;
+    padding: 5px 10px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid #333;
+    background-color: #f3fafe; }
+  .advantages__else--2 {
+    top: 170px;
+    left: 105px; }
+  .advantages__else--3 {
+    top: 320px;
+    left: 103px; }
+  .advantages__else--4 {
+    top: 430px;
+    left: 210px; }
+
+.work-description {
+  min-height: 800px;
+  border-bottom: 3px solid #2b9540;
+  background: url("../img/shema-s1_qxuk3lb.jpg") 100% 0% no-repeat, url("../img/shema-pr1_x1pprvi.jpg") 100% 100% no-repeat; }
+
+.work-description__inner {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 970px; }
+
+.work-description__title {
+  margin: 0;
+  margin-bottom: 45px;
+  padding-top: 50px;
+  width: 250px;
+  font-size: 22px;
+  font-weight: normal; }
+
+.work-description__title span {
+  text-transform: uppercase; }
+
+.work-description__list {
+  list-style: none; }
+
+.work-description__item {
+  position: relative;
+  margin-bottom: 25px;
+  width: 320px;
+  font-weight: 300; }
+  .work-description__item::before {
+    content: "1";
+    position: absolute;
+    top: 4px;
+    left: -45px;
+    padding-top: 3px;
+    width: 35px;
+    height: 32px;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #2b9540; }
+  .work-description__item--2::before {
+    content: "2"; }
+  .work-description__item--3::before {
+    content: "3"; }
+  .work-description__item--4::before {
+    content: "4"; }
+  .work-description__item--5::before {
+    content: "5"; }
+
+.work-description__item span {
+  font-weight: bold; }
+
+.service__inner {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 970px; }
+
+.service__title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 500px;
+  font-size: 22px;
+  font-weight: 500; }
+
+.service__title span {
+  text-transform: uppercase; }
+
+.service__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 0;
+  list-style: none; }
+
+.service__item {
+  position: relative;
+  padding-top: 60px;
+  width: 470px; }
+  .service__item::before {
+    content: "1";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 5px;
+    width: 60px;
+    height: 55px;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #2b9540; }
+  .service__item--2::before {
+    content: "2"; }
+  .service__item--3::before {
+    content: "3"; }
+  .service__item--4::before {
+    content: "4"; }
+  .service__item--5::before {
+    content: "5"; }
+
+.service__item-title {
+  font-size: 18px;
+  font-weight: bold; }
+
+.service__item-text {
+  font-weight: 300; }
+
+.instruction__inner {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 970px; }
+
+.instruction__title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 600px;
+  font-size: 22px;
+  font-weight: 500; }
+
+.instruction__title span {
+  text-transform: uppercase; }
+
+.instruction__list {
+  list-style: none; }
+
+.instruction__item {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 15px 0;
+  padding-left: 70px;
+  width: 300px; }
+  .instruction__item::before {
+    content: "1";
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    padding-top: 2px;
+    width: 30px;
+    height: 28px;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #2b9540; }
+  .instruction__item--2::before {
+    content: "2"; }
+  .instruction__item--3::before {
+    content: "3"; }
+  .instruction__item--4::before {
+    content: "4"; }
+  .instruction__item--5 {
+    border: 3px solid #2b9540;
+    border-radius: 25px; }
+    .instruction__item--5::before {
+      content: "5"; }
+
+.instruction__link {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px dashed #000; }
+
+.instruction__phone {
+  font-weight: bold; }
+
+.consultation {
+  min-height: 428px;
+  background-image: url("../img/vopros-compressor_z0r0dml.jpg");
+  background-color: green;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.consultation__inner {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 970px; }
+
+.consultation__title {
+  margin: 0;
+  margin-bottom: 5px;
+  padding-top: 110px;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff; }
+
+.consultation__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff; }
+
+.consultation__form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.consultation__form-input {
+  padding: 0 15px;
+  width: 285px;
+  height: 46px;
+  box-sizing: border-box;
+  border-radius: 23px;
+  border: none;
+  outline: none; }
+  .consultation__form-input:focus {
+    border-color: blue;
+    border-radius: 23px; }
+
+.consultation__form-btn {
+  width: 375px;
+  border: none; }
+
+.consultation__note {
+  font-weight: 300;
+  color: #fff; }
+
+.map {
+  position: relative;
+  height: 450px; }
+
+.map__contacts {
+  position: absolute;
+  left: 110px;
+  bottom: 55px;
+  z-index: 100;
+  padding: 15px 50px;
+  width: 215px;
+  height: 75px;
+  background-color: #fff; }
+
+.map__contacts-text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+.map__contacts-address {
+  margin: 0;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic; }

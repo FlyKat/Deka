@@ -1,3 +1,7 @@
+.advantages {
+  border-bottom: 3px solid #2b9540;
+}
+
 .advantages__inner {
   @include container();
   margin: 0 auto;
@@ -28,14 +32,66 @@
   margin-left: 70px;
   margin-top: 30px;
   padding-left: 50px;
+  list-style: none;
 }
 
 .advantages__item {
+  position: relative;
   margin-bottom: 30px;
   width: 375px;
   font-weight: 300;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -40px;
+    width: 32px;
+    height: 4px;
+    background-color: #2b9540;
+  }
+
 }
 
 .advantages__item span {
   font-weight: bold;
+}
+
+.advantages__img {
+  position: relative;
+}
+
+.advantages__else {
+  position: absolute;
+  top: 40px;
+  left: 170px;
+
+  &:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: 10;
+    padding: 5px 10px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid #333;
+    background-color: #f3fafe;
+  }
+
+  &--2 {
+    top: 170px;
+    left: 105px;
+  }
+
+  &--3 {
+    top: 320px;
+    left: 103px;
+  }
+
+  &--4 {
+    top: 430px;
+    left: 210px;
+  }
 }

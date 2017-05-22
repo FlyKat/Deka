@@ -1,0 +1,79 @@
+.instruction__inner {
+  @include container();
+}
+
+.instruction__title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 600px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.instruction__title span {
+  text-transform: uppercase;
+}
+
+.instruction__list {
+  list-style: none;
+}
+
+.instruction__item {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 15px 0;
+  padding-left: 70px;
+  width: 300px;
+
+  &::before  {
+    content: "1";
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    padding-top: 2px;
+    width: 30px;
+    height: 28px;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #2b9540;
+  }
+
+  &--2 {
+    &::before {
+      content: "2";
+    }
+  }
+
+  &--3 {
+    &::before {
+      content: "3";
+    }
+  }
+
+  &--4 {
+    &::before {
+      content: "4";
+    }
+  }
+
+  &--5 {
+    border: 3px solid #2b9540;
+    border-radius: 25px;
+    &::before {
+      content: "5";
+    }
+  }
+}
+
+.instruction__link {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px dashed #000;
+}
+
+.instruction__phone {
+  font-weight: bold;
+}

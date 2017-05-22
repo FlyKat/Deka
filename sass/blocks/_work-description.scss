@@ -1,0 +1,78 @@
+.work-description {
+  min-height: 800px;
+  border-bottom: 3px solid #2b9540;
+  background: url('../img/shema-s1_qxuk3lb.jpg') 100% 0% no-repeat,
+              url('../img/shema-pr1_x1pprvi.jpg') 100% 100% no-repeat;
+}
+
+.work-description__inner {
+  @include container();
+}
+
+.work-description__title {
+  margin: 0;
+  margin-bottom: 45px;
+  padding-top: 50px;
+  width: 250px;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.work-description__title span {
+  text-transform: uppercase;
+}
+
+.work-description__list {
+  list-style: none;
+}
+
+.work-description__item {
+  position: relative;
+  margin-bottom: 25px;
+  width: 320px;
+  font-weight: 300;
+
+  &::before  {
+    content: "1";
+    position: absolute;
+    top: 4px;
+    left: -45px;
+    padding-top: 3px;
+    width: 35px;
+    height: 32px;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #2b9540;
+  }
+
+  &--2 {
+    &::before {
+      content: "2";
+    }
+  }
+
+  &--3 {
+    &::before {
+      content: "3";
+    }
+  }
+
+  &--4 {
+    &::before {
+      content: "4";
+    }
+  }
+
+  &--5 {
+    &::before {
+      content: "5";
+    }
+  }
+}
+
+.work-description__item  span {
+  font-weight: bold;
+}
