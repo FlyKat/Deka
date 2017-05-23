@@ -1,5 +1,6 @@
 .products {
-  min-height: 1246px;
+  //min-height: 1246px;
+  padding: 45px 0;
   background-color: #6ec57f;
 }
 
@@ -10,7 +11,9 @@
 }
 
 .products__title {
-  padding-top: 45px;
+  margin: 0;
+  margin-bottom: 50px;
+ // padding-top: 45px;
   padding-left: 55px;
   font-size: 22px;
   font-weight: 500;
@@ -22,10 +25,12 @@
 }
 
 .products__group {
+  margin-bottom: 30px;
+  min-height: 750px;
   background-image: url('../img/ramatabsoic5tpp-compressor.png');
   background-repeat: no-repeat;
-  background-position: 50% 10px;
-  bakground-size: 30%;
+  background-position: 0% 100%;
+  //background-size: cover;
 }
 
 .products__tabs {
@@ -62,24 +67,33 @@
   width: 930px;
 }
 
-.products__slide__info {
+#slide1, #slide3, #slide4, #slide5, #slide6, #slide7, #slide8 {
+  display: none;
+}
+
+.products__slide-info {
   color: #fff;
 }
 
 .products__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0;
   list-style: none;
 }
 
 .products__note {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 80px;
   font-size: 14px;
   line-height: 17px;
   color: #fff;
 }
 
 .products__info {
+  margin: 0 auto;
+  margin-bottom: 50px;
   padding: 15px 65px;
   width: 510px;
   font-size: 18px;
@@ -90,3 +104,6 @@
   border-radius: 30px;
 }
 
+.products__btn {
+  margin: 0 auto;
+}
