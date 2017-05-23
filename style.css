@@ -411,8 +411,7 @@ body {
 .page-header {
   background-image: url("../img/topimg-compressor_3jppsrd.jpg");
   background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-repeat: no-repeat; }
 
 .page-header__top {
   position: fixed;
@@ -476,7 +475,7 @@ body {
   -ms-flex-pack: justify;
       justify-content: space-between;
   margin-top: 90px;
-  margin-bottom: 150px;
+  margin-bottom: 160px;
   margin-left: 100px;
   padding-top: 25px;
   width: 970px;
@@ -551,8 +550,8 @@ body {
 
 .page-header__intro-img {
   position: absolute;
-  top: 300px;
-  right: 80px;
+  top: 344px;
+  left: 559px;
   width: 487px;
   height: 487px;
   z-index: 10; }
@@ -790,7 +789,7 @@ body {
   width: 216px;
   font-size: 18px;
   font-weight: 500;
-  border: 1px solid green; }
+  border: 1px solid #88d6a0; }
 
 .ready-product__price-text {
   margin: 10px 0; }
@@ -882,6 +881,153 @@ body {
 
 .features__item-info {
   font-weight: 300; }
+
+.products {
+  min-height: 1246px;
+  background-color: #6ec57f; }
+
+.products__inner {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1075px; }
+
+.products__title {
+  padding-top: 45px;
+  padding-left: 55px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff; }
+
+.products__title span {
+  text-transform: uppercase; }
+
+.products__group {
+  background-image: url("../img/ramatabsoic5tpp-compressor.png");
+  background-repeat: no-repeat;
+  background-position: 50% 10px;
+  bakground-size: 30%; }
+
+.products__tabs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 930px; }
+
+.products__tabs-item {
+  margin-bottom: 7px;
+  padding: 0 5px;
+  width: 216px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 17px;
+  background-color: rgba(138, 137, 136, 0.5); }
+  .products__tabs-item--active {
+    color: #000;
+    background-color: #fff; }
+
+.products__slide {
+  margin: 0 auto;
+  width: 930px; }
+
+.products__slide__info {
+  color: #fff; }
+
+.products__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 0;
+  list-style: none; }
+
+.products__note {
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff; }
+
+.products__info {
+  padding: 15px 65px;
+  width: 510px;
+  font-size: 18px;
+  line-heught: 24px;
+  text-align: center;
+  color: #fff;
+  border: 3px solid #2b9540;
+  border-radius: 30px; }
+
+.product {
+  padding: 25px 15px;
+  width: 270px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #fff; }
+
+.product__view {
+  margin-bottom: 25px;
+  padding-top: 6px;
+  border: 1px solid #d3d3d3; }
+
+.product__img {
+  display: block; }
+
+.product__title {
+  margin: 0;
+  margin-top: 6px;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #222;
+  background-color: #d3d3d3; }
+
+.product__characteristics {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  width: 250px;
+  list-style: none; }
+
+.product__characteristics-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 15px;
+  width: 125px; }
+  .product__characteristics-item:nth-child(odd) {
+    margin-right: 10px;
+    width: 115px; }
+
+.product__characteristics-info {
+  width: 70px; }
+
+.product__price {
+  margin: 0 auto;
+  margin-bottom: 22px;
+  padding: 10px 0;
+  width: 175px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  border: 1px solid #88d6a0; }
+
+.product__btn {
+  margin: 0 auto;
+  padding: 15px 3px;
+  width: 180px; }
 
 .advantages {
   border-bottom: 3px solid #2b9540; }
