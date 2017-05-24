@@ -1,0 +1,56 @@
+.certification {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  border-bottom: 3px solid #2b9540;
+}
+
+.certification__inner {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1032px;
+}
+
+.certification__group {
+  position: relative;
+  min-height: 500px;
+  background-image: url('../img/sertram3.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.certification__title {
+  margin-bottom: 50px;
+  padding-left: 50px;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.certification__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 810px;
+  list-style: none;
+}
+
+#certification-item4, #certification-item5 {
+  display: none;
+}
+
+.certification__arrow {
+  @include img-replacement;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  display: block;
+  width: 30px;
+  height: 54px;
+  background-image: url('../img/sliderleft.png');
+  background-repeat: no-repeat;
+
+  &--next {
+    left: 905px;
+    background-image: url('../img/sliderright.png');
+  }
+}
