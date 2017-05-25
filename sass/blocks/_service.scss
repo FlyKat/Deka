@@ -4,6 +4,9 @@
 
 .service__inner {
   @include container();
+  background-image: url('../img/service.jpg');
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .service__title {

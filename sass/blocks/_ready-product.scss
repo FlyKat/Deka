@@ -34,7 +34,7 @@
 }
 
 .ready-product__price-old {
-  color: #a9a9a9;
+  clor: #a9a9a9;
   text-decoration: line-through;
 }
 
@@ -50,9 +50,10 @@
   color: #fff;
   text-decoration: none;
   border-radius: 13px;
-  background: linear-gradient(to bottom, #7cb02e 0%, #549d4b 100%);
+  background: linear-gradient(to bottom, #7cb02e 0%, #2b9540 100%);
   box-shadow: 0px 2px 2px 0px rgba(22, 86, 28, 0.8);
   box-sizing: border-box;
+  cursor: pointer;
 
   &:hover {
     background: linear-gradient(to bottom, #70b577 0%, #62ae69 100%);
@@ -60,7 +61,7 @@
   }
 
   &:active {
-     background: linear-gradient(to top, #7cb02e 0%, #549d4b 100%);
+     background: linear-gradient(to top, #7cb02e 0%, #2b9540 100%);
      box-shadow: inset 0px 2px 2px 0px #16561c;
   }
 }

@@ -26,19 +26,19 @@
   &::after {
     content: ":";
     position: absolute;
-    left: 55px;
+    left: 70px;
     top: 0;
   }
 
   &--hours {
     &::after {
-      left: 127px;
+      left: 147px;
     }
   }
 
   &--minutes {
     &::after {
-      left: 200px;
+      left: 220px;
     }
   }
 

@@ -1,10 +1,16 @@
+.instruction {
+  padding: 50px 0;
+}
+
 .instruction__inner {
   @include container();
+  background-image: url('../img/instruction.jpg');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
 }
 
 .instruction__title {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   width: 600px;
   font-size: 22px;
   font-weight: 500;
@@ -15,6 +21,7 @@
 }
 
 .instruction__list {
+  padding: 0;
   list-style: none;
 }
 
@@ -22,14 +29,15 @@
   position: relative;
   margin-bottom: 30px;
   padding: 15px 0;
-  padding-left: 70px;
+  padding-left: 60px;
   width: 300px;
+  line-height: 22px;
 
   &::before  {
     content: "1";
     position: absolute;
-    top: 15px;
-    left: 20px;
+    top: 16px;
+    left: 10px;
     padding-top: 2px;
     width: 30px;
     height: 28px;

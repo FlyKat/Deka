@@ -1,0 +1,25 @@
+.results {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  border-bottom: 3px solid #2b9540;
+}
+
+.results__inner {
+  @include container();
+}
+
+.results__title {
+  margin-bottom: 40px;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.results__title span {
+  text-transform: uppercase;
+}
+
+.results__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

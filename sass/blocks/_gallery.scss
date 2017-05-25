@@ -6,6 +6,7 @@
 
 .gallery__inner {
   @include container();
+  position: relative;
 }
 
 .gallery__title {
@@ -17,10 +18,6 @@
 
 .gallery__title span {
   text-transform: uppercase;
-}
-
-.gallery__items {
-  position: relative;
 }
 
 .gallery__item {
@@ -61,8 +58,8 @@
 .gallery__arrow {
   @include img-replacement;
   position: absolute;
-  top: 170px;
-  left: 0;
+  top: 280px;
+  left: 15px;
   display: block;
   width: 30px;
   height: 54px;
@@ -70,15 +67,15 @@
   background-repeat: no-repeat;
 
   &--next {
-    left: 940px;
+    left: 955px;
     background-image: url('../img/sliderright.png');
   }
 }
 
 .gallery__controls {
-  @include img-replacement;
+ //@include img-replacement;
   position: absolute;
-  top: 350px;
+  top: 450px;
   left: 300px;
   width: 330px;
   outline: 1px solid red;

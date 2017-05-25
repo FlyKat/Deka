@@ -26,3 +26,11 @@ function init() {
 
   myMap.geoObjects.add(myPlacemark);
 }
+
+
+/*var swiper = new Swiper('.gallery-items', {
+        pagination: '.gallery-controls',
+        paginationClickable: true,
+        nextButton: '.gallary-arrow--prev',
+        prevButton: '.gallery-arrow--next',
+        spaceBetween: 30*/
