@@ -1,6 +1,10 @@
 .action {
   padding-top: 130px;
+  padding-bottom: 70px;
+}
 
+.action__title {
+  @include visually-hidden;
 }
 
 .action__inner {
@@ -39,6 +43,7 @@
 }
 
 .action__presents {
+  margin-bottom: 30px;
   padding: 0;
   list-style: none;
 }

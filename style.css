@@ -585,7 +585,16 @@ body {
     box-shadow: inset 0px 2px 2px 0px #952718; }
 
 .action {
-  padding-top: 130px; }
+  padding-top: 130px;
+  padding-bottom: 70px; }
+
+.action__title {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  width: 1px;
+  height: 1px;
+  border: 0;
+  overflow: hidden; }
 
 .action__inner {
   margin: 0 auto;
@@ -624,6 +633,7 @@ body {
   font-weight: bold; }
 
 .action__presents {
+  margin-bottom: 30px;
   padding: 0;
   list-style: none; }
 
@@ -687,29 +697,43 @@ body {
   font-family: 'OpenSans', 'Arial', sans-serif;
   font-weight: 300; }
 
-.counter__text {
+.counter__title {
+  margin-left: 40px;
   font-size: 18px;
   font-weight: bold; }
 
-.counter__text span {
+.counter__title span {
   color: #a52a2a; }
 
 .counter__clock {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 300px;
   padding: 0;
   font-size: 42px;
   line-height: 52px;
   color: #333;
   list-style: none; }
 
-.counter__clock-item {
-  display: -ms-flexbox;
-  display: flex; }
+.counter__clock-item::after {
+  content: ":";
+  position: absolute;
+  left: 55px;
+  top: 0; }
+
+.counter__clock-item--hours::after {
+  left: 127px; }
+
+.counter__clock-item--minutes::after {
+  left: 200px; }
 
 .counter__clock-label {
   font-size: 11px;
-  line-height: 11px; }
+  line-height: 11px;
+  text-align: center; }
 
 .ready-products {
   background-image: url("../img/8-1-111.jpg");
@@ -1099,8 +1123,13 @@ body {
 .advantages__else {
   position: absolute;
   top: 40px;
-  left: 170px; }
-  .advantages__else:hover::after {
+  left: 170px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #2b9540;
+  cursor: pointer;
+  /* &:hover::after {
     content: attr(data-title);
     position: absolute;
     top: 30%;
@@ -1111,7 +1140,8 @@ body {
     font-size: 16px;
     font-weight: 300;
     border: 1px solid #333;
-    background-color: #ecffe5; }
+    background-color: #ecffe5;
+  }*/ }
   .advantages__else--2 {
     top: 170px;
     left: 105px; }
@@ -1121,6 +1151,19 @@ body {
   .advantages__else--4 {
     top: 430px;
     left: 210px; }
+
+.advantages__else-plus {
+  padding: 0;
+  font-size: 40px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff; }
+
+.advantages__else-tip {
+  display: none; }
+
+.advantages__else:hover .advantages__else-tip {
+  dispaly: block; }
 
 .work-description {
   min-height: 800px;
@@ -1562,12 +1605,13 @@ body {
 
 .map__contacts {
   position: absolute;
-  left: 110px;
+  left: 300px;
   bottom: 55px;
   z-index: 100;
-  padding: 15px 50px;
-  width: 215px;
-  height: 75px;
+  padding: 25px 20px 15px 20px;
+  width: 275px;
+  height: 65px;
+  text-align: center;
   background-color: #fff; }
 
 .map__contacts-text {
@@ -1579,6 +1623,5 @@ body {
 
 .map__contacts-address {
   margin: 0;
-  font-size: 13px;
   font-weight: bold;
   font-style: italic; }

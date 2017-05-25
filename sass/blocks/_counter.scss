@@ -1,14 +1,18 @@
-.counter__text {
+.counter__title {
+  margin-left: 40px;
   font-size: 18px;
   font-weight: bold;
 }
 
-.counter__text span {
+.counter__title span {
   color: #a52a2a;
 }
 
 .counter__clock {
+  position: relative;
   display: flex;
+  justify-content: space-around;
+  width: 300px;
   padding: 0;
   font-size: 42px;
   line-height: 52px;
@@ -17,11 +21,32 @@
 }
 
 .counter__clock-item {
-  display: flex;
+  //margin-right: 25px;
+
+  &::after {
+    content: ":";
+    position: absolute;
+    left: 55px;
+    top: 0;
+  }
+
+  &--hours {
+    &::after {
+      left: 127px;
+    }
+  }
+
+  &--minutes {
+    &::after {
+      left: 200px;
+    }
+  }
+
 }
 
 .counter__clock-label {
   font-size: 11px;
   line-height: 11px;
+  text-align: center;
 }
 

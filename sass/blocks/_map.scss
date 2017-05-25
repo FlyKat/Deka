@@ -6,12 +6,13 @@
 
 .map__contacts {
   position: absolute;
-  left: 110px;
+  left: 300px;
   bottom: 55px;
   z-index: 100;
-  padding: 15px 50px;
-  width: 215px;
-  height: 75px;
+  padding: 25px 20px 15px 20px;
+  width: 275px;
+  height: 65px;
+  text-align: center;
   background-color: #fff;
 }
 
@@ -25,7 +26,6 @@
 
 .map__contacts-address {
   margin: 0;
-  font-size: 13px;
   font-weight: bold;
   font-style: italic;
 }
