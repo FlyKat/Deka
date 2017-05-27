@@ -5,6 +5,7 @@
     <title>БиоДека</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
     <link href="style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -49,7 +50,7 @@
               <li class="page-header__offer-item">выбора модели станции</li>
             </ul>
             <a class="btn  page-header__offer-btn" href="#">Получить смету сейчас</a>
-            <img class="page-header__offer-img" src="img/biodeka-5.png" alt="Изображение товара" width="487" height="487">
+           <!--- <img class="page-header__offer-img" src="img/8-person-img.png" alt="Изображение товара" width="164" height="265">-->
             <div class="promo-video  page-header__offer-video">
               <a class="promo-video__btn-play" href="#">Play</a>
               <p class="promo-video__text">промо</p>
@@ -68,9 +69,18 @@
             </div>
             <p class="action__text"><span>До 31 мая</span> при заказе канализации &laquo;БиоДека&raquo; под ключ Вы получите в&nbsp;подарок:</p>
             <ul class="action__presents">
-              <li class="action__present">Доставка</li>
-              <li class="action__present">Сервисное обслуживание</li>
-              <li class="action__present">Проект в AutoCAD</li>
+              <li class="action__present action__present--delivery">
+                Доставка
+                <p class="action__present-desc">Доставку станции и всех необходимых материалов до вашего участка</p>
+                </li>
+              <li class="action__present action__present--service">
+                Сервисное обслуживание
+                <p class="action__present-desc">2 года сервисного обслуживания станции нашими специалистами</p>
+                </li>
+              <li class="action__present action__present--project">
+                 Проект в AutoCAD
+                 <p class="action__present-desc">Проект канализации с точным расположением элементов системы</p>
+              </li>
             </ul>
             <section class="counter  action__ counter">
               <h3 class="counter__title">До конца <span>акции</span> осталось:</h3>
@@ -98,8 +108,8 @@
             <p class="application__text application__text--big">Оставьте заявку сейчас,</p>
             <p class="application__text">чтобы узнать подробнее об акции и получить свои подарки </p>
             <form class="application__form">
-              <input class="application__form-input" type="text" name="name" id="name" placeholder="Введите Ваше имя*" required>
-              <input class="application__form-input" type="tel" name="tel" id="tel" placeholder="Введите телефон*" required>
+              <input class="input  application__form-input" type="text" name="name" id="name" placeholder="Введите Ваше имя*" required>
+              <input class="input  application__form-input" type="tel" name="tel" id="tel" placeholder="Введите телефон*" required>
               <button class="btn  application__form-btn" type="submit">Узнать об акции подробнее</button>
             </form>
             <p class="application__note">Ваши данные не будут переданы третьим лицам</p>
@@ -113,38 +123,65 @@
             <h3 class="ready-products__group-title">Очистное сооружение, доставка, материалы и монтаж</h3>
             <div class="ready-products__group-wrap">
               <article class="ready-product  ready-products__group-item">
+                <div class="mark mark--sale  ready-product__mark--sale">Скидка</div>
                 <h4 class="ready-product__title">Для дома</h4>
+                <div class="ready-product__desc">
+                  <p class="ready-product__desc-item"><span>Биодека 5 С-800:</span> для 5 чел.</p>
+                  <p class="ready-product__desc-item">Ванна: 1</p>
+                  <p class="ready-product__desc-item">Туалет: 1</p>
+                  <p class="ready-product__desc-item">Раковина: 2</p>
+                  <p class="ready-product__desc-item">Стиральная машина: 1</p>
+                  <p class="ready-product__desc-item">Посудомоечная машина: 1</p>
+                </div>
                 <div class="ready-product__img">
                   <img src="img/bd-8-compressor.png" alt="Изображение товара" width="90" height="144">
                 </div>
                 <div class="ready-product__price">
                   <p class="ready-product__price-text">Монтаж под ключ за</p>
                   <p class="ready-product__price-current"><span class="ready-product__price-old">116 250</span> 93 000 p.<sup>*</sup></p>
-                  <a class="ready-product__btn" hfef="#">Подробнее</a>
+                  <a class="ready-product__btn-details ready-product__btn-details--home" hfef="#">Подробнее</a>
                 </div>
                 <a class="btn  ready-product__order-btn" href="#">Заказать монтаж</a>
               </article>
               <article class="ready-product  ready-products__group-item">
+                <div class="mark mark--hit  ready-product__mark--hit">Хит продаж</div>
+                <div class="mark mark--sale  ready-product__mark--sale">Скидка</div>
                 <h4 class="ready-product__title">Для дачи</h4>
+                <div class="ready-product__desc">
+                  <p class="ready-product__desc-item"><span>Биодека 3 С-600:</span> для 3 чел.</p>
+                  <p class="ready-product__desc-item">Душ: 1</p>
+                  <p class="ready-product__desc-item">Туалет: 1</p>
+                  <p class="ready-product__desc-item">Раковина: 1</p>
+                  <p class="ready-product__desc-item">Стиральная машина: 1</p>
+                 </div>
                 <div class="ready-product__img">
                   <img src="img/bd-5-compressor.png" alt="Изображение товара" width="71" height="144">
                 </div>
                 <div class="ready-product__price">
                   <p class="ready-product__price-text">Монтаж под ключ за</p>
                   <p class="ready-product__price-current"><span class="ready-product__price-old">106 125</span> 84 900 p.<sup>*</sup></p>
-                  <a class="ready-product__btn" hfef="#">Подробнее</a>
+                  <a class="ready-product__btn-details ready-product__btn-details--dacha" hfef="#">Подробнее</a>
                  </div>
                  <a class="btn  ready-product__order-btn" href="#">Заказать монтаж</a>
               </article>
               <article class="ready-product  ready-products__group-item">
+                <div class="mark mark--sale  ready-product__mark--sale">Скидка</div>
                 <h4 class="ready-product__title">Для коттеджа</h4>
+                <div class="ready-product__desc">
+                  <p class="ready-product__desc-item"><span>Биодека 8 С-800:</span> для 8 чел.</p>
+                  <p class="ready-product__desc-item">Душ: 2, Ванна: 2</p>
+                  <p class="ready-product__desc-item">Туалет: 2</p>
+                  <p class="ready-product__desc-item">Раковина: 3</p>
+                  <p class="ready-product__desc-item">Стиральная машина: 1</p>
+                  <p class="ready-product__desc-item">Посудомоечная машина: 1</p>
+                </div>
                 <div class="ready-product__img">
                   <img src="img/bd-10-compressor.png" alt="Изображение товара" width="97" height="144">
                 </div>
                 <div class="ready-product__price">
                   <p class="ready-product__price-text">Монтаж под ключ за</p>
                   <p class="ready-product__price-current"><span class="ready-product__price-old">116 250</span> 93 000 p.<sup>*</sup></p>
-                  <a class="ready-product__btn" hfef="#">Подробнее</a>
+                  <a class="ready-product__btn-details ready-product__btn-details--cottage" hfef="#">Подробнее</a>
                  </div>
                 <a class="btn  ready-product__order-btn" href="#">Заказать монтаж</a>
               </article>
@@ -295,7 +332,7 @@
                   </article>
                 </div>
               </section>
-              <section class="products__slide" id="products-slide2">
+              <section class="products__slide  products__slide--active" id="products-slide2">
                 <h3 class="products__slide-info">БиоДека с самотечным выбросом очищенной воды (если грунтовые воды низко)</h3>
                 <div class="products__list">
                   <article class="product  products__item">
@@ -1033,10 +1070,10 @@
         </div>
       </section>
       <section class="gallery">
-        <div class="gallery__inner">
+        <div class="gallery__inner  swiper-container">
           <h2 class="gallery__title"><span>Посмотрите</span><br>наши работы</h2>
-          <div class="gallery__items">
-            <div class="gallery__item" id="gallery-slide1">
+          <div class="gallery__items  swiper-wrapper">
+            <div class="gallery__item  swiper-slide">
               <p class="gallery__info"><span class="gallery__info-item">Адрес: </span>Приморск, Набережная Юрия Гагарина 39</p>
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>Э&laquo;Биодека 8 С-800&raquo;</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">117 700</span> руб.</p>
@@ -1055,7 +1092,7 @@
                  </a>
                </div>
             </div>
-            <div class="gallery__item" id="gallery-slide2">
+            <div class="gallery__item  swiper-slide">
               <p class="gallery__info"><span class="gallery__info-item">Адрес: </span>Выборгское шоссе, СНТ Лесное-1</p>
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>&laquo;Биодека 5 П-800&raquo;</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">89 900</span> руб.</p>
@@ -1074,7 +1111,7 @@
                  </a>
               </div>
             </div>
-            <div class="gallery__item" id="gallery-slide3">
+            <div class="gallery__item  swiper-slide">
               <p class="gallery__info"><span class="gallery__info-item">Адрес: </span>г. Тосно, ул. Калинина</p>
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>&laquo;Биодека 5 П-800&raquo;</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">91 100</span> руб.</p>
@@ -1089,11 +1126,11 @@
                   <img src="" alt="" width="" height="">
                 </a>
                 <a class="" href="#">
-                  <img src="" alt=" width="" height="">
+                  <img src="" alt="" width="" height="">
                  </a>
                </div>
             </div>
-            <div class="gallery__item" id="gallery-slide4">
+            <div class="gallery__item  swiper-slide">
               <p class="gallery__info"><span class="gallery__info-item">Адрес: </span>пос. Симагино (часть 1)</p>
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>&laquo;Коло Веси 20&raquo;Х2 (спец заказ) и &laquo;Коло Веси 10&raquo;</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span>конфеденциально</p>
@@ -1112,7 +1149,7 @@
                 </a>
               </div>
             </div>
-            <div class="gallery__item" id="gallery-slide5">
+            <div class="gallery__item  swiper-slide">
               <p class="gallery__info"><span class="gallery__info-item">Адрес: </span>пос. Симагино (часть 2)</p>
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>&laquo;Коло Веси 20&raquo;Х2 (спец заказ) и &laquo;Коло Веси 10&raquo;</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span>конфеденциально</p>
@@ -1131,7 +1168,7 @@
                  </a>
                </div>
             </div>
-            <div class="gallery__item" id="gallery-slide6">
+            <div class="gallery__item  swiper-slide">
               <p class="gallery__info"><span class="gallery__info-item">Адрес: </span>Приозерское шоссе, пос. Починок</p>
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>&laquo;Коло Веси 3&raquo; самотечная</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">99 800</span>руб.</p>
@@ -1150,7 +1187,7 @@
                  </a>
                </div>
             </div>
-            <div class="gallery__item" id="gallery-slide7">
+            <div class="gallery__item  swiper-slide">
               <p class="gallery__info"><span class="gallery__info-item">Адрес: </span>пос. Левашово</p>
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>&laquo;Коло Веси 3&raquo; принудительная</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">131 900</span>руб.</p>
@@ -1169,7 +1206,7 @@
                 </a>
               </div>
             </div>
-            <div class="gallery__item" id="gallery-slide8">
+            <div class="gallery__item  swiper-slide">
               <p class="gallery__info"><span class="gallery__info-item">Адрес: </span>г. Всеволожск, Торговый пр. 156</p>
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>&laquo;Коло Веси 5&raquo; принудительная</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">131 900</span>руб.</p>
@@ -1188,7 +1225,7 @@
                 </a>
               </div>
             </div>
-            <div class="gallery__item" id="gallery-slide9">
+            <div class="gallery__item  swiper-slide">
               <p class="gallery__info"><span class="gallery__info-item">Адрес: </span>Гатчинский район, деревня Остров</p>
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>&laquo;Коло Веси 3&raquo; и водоснабжение</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">133 000</span>руб.</p>
@@ -1207,7 +1244,7 @@
                  </a>
                </div>
             </div>
-            <div class="gallery__item" id="gallery-slide10">
+            <div class="gallery__item  swiper-slide">
               <p class="gallery__info"><span class="gallery__info-item">Адрес: </span>Выборгский р-н, пос. Кирпичное, СНТ &laquo;Волна&raquo;</p>
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>Энергонезависимый септик 1м<sup>3</sup>с колодцем для доочистки</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">43 900</span>руб.</p>
@@ -1226,7 +1263,7 @@
                  </a>
                </div>
             </div>
-            <div class="gallery__item" id="gallery-slide11">
+            <div class="gallery__item  swiper-slide">
               <p class="gallery__info"><span class="gallery__info-item">Адрес: </span>Тосненский район, деревня Ивановская</p>
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>Энергонезависимый септик 3м<sup>3</sup></p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">72 900</span> руб.</p>
@@ -1246,22 +1283,22 @@
                </div>
             </div>
           </div>
-          <div class="gallery__controls">
-            <a class="gallery__controls-item" href="#">1</a>
-            <a class="gallery__controls-item" href="#">2</a>
-            <a class="gallery__controls-item" href="#">3</a>
-            <a class="gallery__controls-item" href="#">4</a>
-            <a class="gallery__controls-item" href="#">5</a>
-            <a class="gallery__controls-item" href="#">6</a>
-            <a class="gallery__controls-item" href="#">7</a>
-            <a class="gallery__controls-item" href="#">8</a>
-            <a class="gallery__controls-item" href="#">9</a>
-            <a class="gallery__controls-item" href="#">10</a>
-            <a class="gallery__controls-item" href="#">11</a>
+          <div class="gallery__pagination  swiper-pagination">
+            <a class="gallery__pagination-item  " href="#">1</a>
+            <a class="gallery__pagination-item" href="#">2</a>
+            <a class="gallery__pagination-item" href="#">3</a>
+            <a class="gallery__pagination-item" href="#">4</a>
+            <a class="gallery__pagination-item" href="#">5</a>
+            <a class="gallery__pagination-item" href="#">6</a>
+            <a class="gallery__pagination-item" href="#">7</a>
+            <a class="gallery__pagination-item" href="#">8</a>
+            <a class="gallery__pagination-item" href="#">9</a>
+            <a class="gallery__pagination-item" href="#">10</a>
+            <a class="gallery__pagination-item" href="#">11</a>
           </div>
-           <div class="gallery__arrows">
-            <a class="gallery__arrow  gallery__arrow--prev" href="#">Назад</a>
-            <a class="gallery__arrow gallery__arrow--next" href="#">Вперед</a>
+           <div class="gallery__bnts">
+            <a class="gallery__btn  gallery__btn--prev  swiper-button-prev" href="#">Назад</a>
+            <a class="gallery__btn gallery__btn--next  swiper-button-next" href="#">Вперед</a>
           </div>
           <p class="gallery__slogan">Мы гарантируем качество монтажа как на фото</p>
         </div>
@@ -1294,10 +1331,10 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__inner">
+        <div class="reviews__inner  swiper-container">
           <h2 class="reviews__title"><span>Что говорят клиенты</span > о&nbsp;нашей работе</h2>
-          <div class="reviews__items">
-            <div class="reviews__item" id="reviews-slide1">
+          <div class="reviews__items  swiper-wrapper">
+            <div class="reviews__item  swiper-slide">
               <div class="reviews__info">
                 <p class="reviews__author">Лариса Васильевна</p>
                 <p class="reviews__text">"...Я обзвонила много компаний, со многими общалась, но вот не было внутреннего чувства, что пора приступать. Но когда мне позвонил Артём в ответ на мою заявку на сайте, всё сложилось в считанные минуты..."</p>
@@ -1316,9 +1353,10 @@
                 </div>
               </div>
               <div class="reviews__item-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/n1KoYA07KMc?ecver=1" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
-            <div class="reviews__item" id="reviews-slide2">
+            <div class="reviews__item  swiper-slide">
               <div class="reviews__info">
                 <p class="reviews__author">Михаил</p>
                 <p class="reviews__text">Работой вашей фирмы я очень доволен как заказчик. Все сделано быстро, профессионально и грамотно</p>
@@ -1337,9 +1375,10 @@
                 </div>
               </div>
               <div class="reviews__item-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3lyK88eJZA?ecver=1" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
-            <div class="reviews__item" id="reviews-slide3">
+            <div class="reviews__item  swiper-slide">
               <div class="reviews__info">
                 <p class="reviews__author">Майя и Владимир</p>
                 <p class="reviews__text">Выражаем благодарность компании “Народный септик”. Выполнили такую непростую работу профессионально и быстро. Спасибо за труд!</p>
@@ -1358,13 +1397,14 @@
                 </div>
               </div>
               <div class="reviews__item-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9-t61X9Y9G4?ecver=1" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
           </div>
-          <div class="reviews__controls">
-            <a class="reviews__controls-item" href="#">1</a>
-            <a class="reviews__controls-item" href="#">2</a>
-            <a class="reviews__controls-item" href="#">3</a>
+          <div class="reviews__pagination  swiper-pagination">
+            <a class="reviews__pagination-item  swiper-pagination-bullet" href="#">1</a>
+            <a class="reviews__pagination-item  swiper-pagination-bullet" href="#">2</a>
+            <a class="reviews__pagination-item  swiper-pagination-bullet" href="#">3</a>
           </div>
         </div>
       </section>
@@ -1387,8 +1427,8 @@
           <h2 class="consultation__title">Остались вопросы?</h2>
           <p class="consultation__text">Оставьте ваши имя и телефон, чтобы получить бесплатную консультацию по &laquo;БиоДека&raquo;</p>
           <form class="consultation__form">
-            <input class="consultation__form-input" type="text" name="name" id="name" placeholder="Ваше имя*" required>
-            <input class="consultation__form-input" type="tel" name="tel" id="tel" placeholder="Ваш телефон*" required>
+            <input class="input  consultation__form-input" type="text" name="name" id="name" placeholder="Ваше имя*" required>
+            <input class="input  consultation__form-input" type="tel" name="tel" id="tel" placeholder="Ваш телефон*" required>
             <button class="btn  consultation__form-btn" type="submit">Получить консультацию</button>
           </form>
           <p class="consultation__note">Ваши данные не будут переданы третьим лицам</p>
@@ -1396,38 +1436,38 @@
       </section>
       <section class="certification">
         <div class="certification__inner">
-          <div class="certification__group">
+          <div class="certification__group  swiper-container">
             <h2 class="certification__title">Сертификаты качества и монтажные схемы</h2>
-            <div class="certification__list">
-              <div class="certification__item" id="certification-item1">
+            <div class="certification__list  swiper-wrapper">
+              <div class="certification__item   swiper-slide">
                 <a href="#">
                   <img src="img/ezbiodeka1-compressor.png" alt="Сертификат качества" width="248" height="333">
                 </a>
               </div>
-              <div class="certification__item" id="certification-item2">
+              <div class="certification__item   swiper-slide">
                 <a href="#">
                   <img src="img/ezbiodeka2-compressor.png" alt="Сертификат качества" width="248" height="333">
                 </a>
               </div>
-              <div class="certification__item" id="certification-item3">
+              <div class="certification__item  swiper-slide">
                 <a href="#">
                   <img src="img/ezbiodeka3-compressor.png" alt="Сертификат качества" width="248" height="333">
                 </a>
               </div>
-              <div class="certification__item" id="certification-item4">
+              <div class="certification__item  swiper-slide">
                 <a href="#">
                   <img src="img/doctrbiodeka-compressor.png" alt="Сертификат качества" width="248" height="333">
                 </a>
               </div>
-              <div class="certification__item" id="certification-item5">
+              <div class="certification__item  swiper-slide">
                 <a href="#">
                   <img src="img/schema-compressor.png" alt="Схема" width="248" height="333">
                 </a>
               </div>
             </div>
-            <div class="certification__arrows">
-              <a class="certification__arrow" href="#">Назад</a>
-              <a class="certification__arrow  certification__arrow--next" href="#">Вперед</a>
+            <div class="certification__btns">
+              <a class="certification__btn--prev  swiper-button-prev" href="#">Назад</a>
+              <a class="certification__btn--next  certification__btn--next  swiper-button-next" href="#">Вперед</a>
             </div>
           </div>
         </div>
@@ -1441,9 +1481,240 @@
       </div>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo">БиоДека</a>
-       <div class=""></div>
+      <div class="page-footer__inner">
+        <div class="page-footer__top">
+          <div class="page-footer__company">
+            <a class="page-footer__logo" href="#">
+              <img src="img/logo-new.png" alt="БиоДека" width=120" height="49">
+            </a>
+            <p>ИНН: 7802584385</p>
+            <p>ОГРН: 1167847264177</p>
+          </div>
+          <p class="page-footer__office-hours">Ежедневно с 9:00 до 22:00 заявки&nbsp;принимаются&nbsp;круглосуточно</p>
+          <div class="page-footer__phone">
+            <p class="page-footer__phone-text">Остались вопросы? Звоните!</p>
+            <p class="page-footer__phone-number">8 (812) 458-90-98</p>
+            <a class="page-footer__phone-link" href="#">Заказать звонок</a>
+          </div>
+        </div>
+        <div class="page-footer__bottom">
+          <div class="page-footer__copyright">
+            <p>OOO &laquo;BioDeka&raquo;</p>
+            <p>&copy; 2017 Все права защищены</p>
+          </div>
+          <div class=page-footer__payment>
+            <span class="">Виза</span>
+            <span>МK</span>
+            <span>Яденьги</span>
+            <span>Еще</span>
+          </div>
+          <div class="page-footer__email">
+            <p class="page-footer__email-text">Пишите нам на почту:</p>
+            <a class="page-footer__email-link" href="mailto:ya.septik78@yandex.ru">ya.septik78@yandex.ru</a>
+          </div>
+        <div>
+      </div>
     </footer>
+    <section class="modal-details modal-details--home">
+      <button class="modal-details__close" type="button" title="Закрыть">&#10006;</button>
+      <h2 class="modal-details__title">В данное предложение входит все необходимое</h2>
+      <p class="modal-details__text">для эталонного монтажа &laquo;БиоДека 5&raquo; в грунт с низкими или средними грунтовыми водами</p>
+        <table class="modal-details__table">
+          <tr>
+            <th>Опции монтажа</th>
+            <th>Условия предоставления</th>
+          </tr>
+          <tr>
+            <td>Очистное сооружение</td>
+            <td>Биодека 5 С-800</td>
+          </tr>
+          <tr>
+            <td>Расходные материалы</td>
+            <td>Трубы, отводы, утеплитель</td>
+          </tr>
+          <tr>
+            <td>Доставка до участка</td>
+            <td>До 100 км от КАД</td>
+          </tr>
+          <tr>
+            <td>Монтаж станции</td>
+            <td>Все земляные работы</td>
+          </tr>
+          <tr>
+            <td>Пуско-наладка</td>
+            <td>В подарок</td>
+          </tr>
+          <tr>
+            <td>Уклада трубопровода</td>
+            <td>До 20м</td>
+          </tr>
+          <tr>
+            <td>Аварийная сигнализация</td>
+            <td>В подарок</td>
+          </tr>
+          <tr>
+            <td>Выезд на замер</td>
+            <td>В подарок</td>
+          </tr>
+          <tr class="modal-details__table-total">
+            <td>Итоговая цена со скидкой</td>
+            <td>93 000 руб<sup>*</sup></td>
+          </tr>
+        </table>
+        <p class="modal-details__slogan">Оставьте заявку сейчас, чтобы&nbsp;получить 20% скидку на&nbsp;монтаж  &laquo;БиоДека 5&raquo; под ключ</p>
+        <form class="modal-details__form">
+          <input class="input  modal-details__form-input" type="tel" name="tel" id="tel" pattern="\+7\d\d\d\d\d\d\d\d\d\d" data-mask="+79999999999"placeholder="Ваш телефон*" required>
+          <button class="btn  modal-details__form-btn" type="submit">Получить скидку</button>
+        </form>
+        <p class="modal-details__note">*Предложение действует до 17 апреля 2017 г.</p>
+    </section>
+    <section class="modal-details modal-details--dacha">
+      <button class="modal-details__close" type="button" title="Закрыть">&#10006;</button>
+      <h2 class="modal-details__title">В данное предложение входит все необходимое</h2>
+      <p class="modal-details__text">для эталонного монтажа &laquo;БиоДека 3&raquo; в грунт с низкими или средними грунтовыми водами</p>
+        <table class="modal-details__table">
+          <tr>
+            <th>Опции монтажа</th>
+            <th>Условия предоставления</th>
+          </tr>
+          <tr>
+            <td>Очистное сооружение</td>
+            <td>Биодека 3 С-600</td>
+          </tr>
+          <tr>
+            <td>Расходные материалы</td>
+            <td>Трубы, отводы, утеплитель</td>
+          </tr>
+          <tr>
+            <td>Доставка до участка</td>
+            <td>До 100 км от КАД</td>
+          </tr>
+          <tr>
+            <td>Монтаж станции</td>
+            <td>Все земляные работы</td>
+          </tr>
+          <tr>
+            <td>Пуско-наладка</td>
+            <td>В подарок</td>
+          </tr>
+          <tr>
+            <td>Уклада трубопровода</td>
+            <td>До 20м</td>
+          </tr>
+          <tr>
+            <td>Аварийная сигнализация</td>
+            <td>В подарок</td>
+          </tr>
+          <tr>
+            <td>Выезд на замер</td>
+            <td>В подарок</td>
+          </tr>
+          <tr class="modal-details__table-total">
+            <td>Итоговая цена со скидкой</td>
+            <td>84 900 руб<sup>*</sup></td>
+          </tr>
+        </table>
+        <p class="modal-details__slogan">Оставьте заявку сейчас, чтобы&nbsp;получить 20% скидку на&nbsp;монтаж  &laquo;БиоДека 3&raquo; под ключ</p>
+        <form class="modal-details__form">
+          <input class="input  modal-details__form-input" type="tel" name="tel" id="tel" pattern="\+7\d\d\d\d\d\d\d\d\d\d" data-mask="+79999999999"placeholder="Ваш телефон*" required>
+          <button class="btn  modal-details__form-btn" type="submit">Получить скидку</button>
+        </form>
+        <p class="modal-details__note">*Предложение действует до 17 апреля 2017 г.</p>
+    </section>
+    <section class="modal-details modal-details--cottage">
+      <button class="modal-details__close" type="button" title="Закрыть">&#10006;</button>
+      <h2 class="modal-details__title">В данное предложение входит все необходимое</h2>
+      <p class="modal-details__text">для эталонного монтажа &laquo;БиоДека 8&raquo; в грунт с низкими или средними грунтовыми водами</p>
+        <table class="modal-details__table">
+          <tr>
+            <th>Опции монтажа</th>
+            <th>Условия предоставления</th>
+          </tr>
+          <tr>
+            <td>Очистное сооружение</td>
+            <td>Биодека 8 С-800</td>
+          </tr>
+          <tr>
+            <td>Расходные материалы</td>
+            <td>Трубы, отводы, утеплитель</td>
+          </tr>
+          <tr>
+            <td>Доставка до участка</td>
+            <td>До 100 км от КАД</td>
+          </tr>
+          <tr>
+            <td>Монтаж станции</td>
+            <td>Все земляные работы</td>
+          </tr>
+          <tr>
+            <td>Пуско-наладка</td>
+            <td>В подарок</td>
+          </tr>
+          <tr>
+            <td>Уклада трубопровода</td>
+            <td>До 20м</td>
+          </tr>
+          <tr>
+            <td>Аварийная сигнализация</td>
+            <td>В подарок</td>
+          </tr>
+          <tr>
+            <td>Выезд на замер</td>
+            <td>В подарок</td>
+          </tr>
+          <tr class="modal-details__table-total">
+            <td>Итоговая цена со скидкой</td>
+            <td>117 700 руб<sup>*</sup></td>
+          </tr>
+        </table>
+        <p class="modal-details__slogan">Оставьте заявку сейчас, чтобы&nbsp;получить 20% скидку на&nbsp;монтаж  &laquo;БиоДека 8&raquo; под ключ</p>
+        <form class="modal-details__form">
+          <input class="input  modal-details__form-input" type="tel" name="tel" id="tel" pattern="\+7\d\d\d\d\d\d\d\d\d\d" data-mask="+79999999999"placeholder="Ваш телефон*" required>
+          <button class="btn  modal-details__form-btn" type="submit">Получить скидку</button>
+        </form>
+        <p class="modal-details__note">*Предложение действует до 17 апреля 2017 г.</p>
+    </section>
+    <div class="modal-estimate">
+      <button class="modal-estimate__close" type="button" title="Закрыть">&#10006;</button>
+      <p class="modal-estimate__text modal-estimate__text--big">Оставьте заявку,</p>
+      <p class="modal-estimate__text">чтобы получить бесплатный расчет сметы</p>
+      <form class="modal-estimate__form-input">
+        <input class=" input modal-estimate__form-input" type="text" name="name" placeholder="Ваше имя*" required>
+        <input class="input  modal-estimate__form-input" type="tel" name="tel" id="tel" pattern="\+7\d\d\d\d\d\d\d\d\d\d" data-mask="+79999999999"placeholder="Ваш телефон*" required>
+        <button class="btn  modal-estimate__form-btn" type="submit">Получить смету сейчас</button>
+      </form>
+    </div>
+    <div class="modal-order">
+      <button class="modal-order__close" type="button" title="Закрыть">&#10006;</button>
+      <p class="modal-order__text modal-order__text--big">Оставьте заявку,</p>
+      <p class="modal-order__text">чтобы узнать подробнее о выбранном предложении</p>
+      <form class="modal-order__form-input">
+        <input class="input  modal-order__form-input" type="tel" name="tel" id="tel" pattern="\+7\d\d\d\d\d\d\d\d\d\d" data-mask="+79999999999"placeholder="Ваш телефон*" required>
+        <button class="btn  modal-order__form-btn" type="submit">Узнать подробнее</button>
+      </form>
+    </div>
+    <div class="modal-consultation">
+      <button class="modal-consultation__close" type="button" title="Закрыть">&#10006;</button>
+      <p class="modal-consultation__text modal-consultation__text--big">Оставьте заявку,</p>
+      <p class="modal-consultation__text">и мы подробно проконсультируем вас по этой станции</p>
+      <form class="modal-consultation__form-input">
+        <input class=" input modal-consultation__form-input" type="text" name="name" placeholder="Ваше имя*" required>
+        <input class="input  modal-consultation__form-input" type="tel" name="tel" id="tel" pattern="\+7\d\d\d\d\d\d\d\d\d\d" data-mask="+79999999999"placeholder="Ваш телефон*" required>
+        <button class="btn  modal-consultation__form-btn" type="submit">Получить бесплатную консультацию</button>
+      </form>
+    </div>
+    <div class="modal-help">
+      <button class="modal-help__close" type="button" title="Закрыть">&#10006;</button>
+      <p class="modal-help__text modal-help__text--big">Оставьте заявку,</p>
+      <p class="modal-help__text">и мы поможем вам выбрать из широкого ассортимента станций &laquo;БиоДека 8&raquo;</p>
+      <form class="modal-hepl__form-input">
+        <input class=" input modal-help__form-input" type="text" name="name" placeholder="Ваше имя*" required>
+        <input class="input  modal-help__form-input" type="tel" name="tel" id="tel" pattern="\+7\d\d\d\d\d\d\d\d\d\d" data-mask="+79999999999"placeholder="Ваш телефон*" required>
+        <button class="btn  modal-help__form-btn" type="submit">Подобрать БиоДеку для моего дома</button>
+      </form>
+    </div>
+    <div class="overlay"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
     <script src="//api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
     <script src="js/script.js"></script>
   </body>

@@ -1,8 +1,8 @@
 .reviews {
   padding-top: 50px;
   padding-bottom: 110px;
-  border-bottom: 3px solid #2b9540;
-  background-color: #ebebeb;
+  border-bottom: 3px solid $brand-color-dark;
+  background-color: $grey-background;
 }
 
 .reviews__inner {
@@ -21,11 +21,6 @@
 .reviews__title span {
   text-transform: uppercase;
 }
-
-#reviews-slide1, #reviews-slide2 {
-  display: none;
-}
-
 
 .reviews__item {
   display: flex;
@@ -53,18 +48,17 @@
   margin-right: 10px;
 }
 
-.reviews__item-video {
-  width: 600px;
-  height: 338px;
-  outline: 1px solid red;
-}
-
-.reviews__controls {
-  @include img-replacement;
+/*.reviews__pagination {
+//  @include img-replacement;
   position: absolute;
   top: 450px;
   left: 650px;
   width: 90px;
   outline: 1px solid red;
+}*/
+
+.reviews__pagination-item {
+  border: 1px solid red;
+  border-radius: 50%;
 }
 

@@ -46,7 +46,7 @@
     text-align: center;
     color: #fff;
     border-radius: 5px;
-    background-color: #2b9540;
+    background-color: $brand-color-dark;
   }
 
   &--2 {
@@ -68,7 +68,7 @@
   }
 
   &--5 {
-    border: 3px solid #2b9540;
+    border: 3px solid $brand-color-dark;
     border-radius: 25px;
     &::before {
       content: "5";
@@ -79,7 +79,7 @@
 .instruction__link {
   color: #000;
   text-decoration: none;
-  border-bottom: 1px dashed #000;
+  border-bottom: 1px dashed text-color-main;
 }
 
 .instruction__phone {

@@ -5,11 +5,12 @@
   left: 0;
   padding: 10px;
   width: 100%;
-  background-color: #fff;
+  background-color: $main-color;
 }
 
 .page-header__top-inner {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   padding: 0 15px;
@@ -33,9 +34,9 @@
   margin-bottom: 10px;
   padding: 0 10px;
   font-family:  'OpenSans', 'Arial', sans-serif;
-  color: #549d4b;
+  color: $brand-color-dark;
   text-decoration: none;
-  border-right: 1px solid #7cb02e;
+  border-right: 1px solid $brand-color;
 }
 
 .page-header__top-phone {
@@ -44,7 +45,7 @@
   width: 155px;
   font-size: 18px;
   font-weight: bold;
-  color: #207d29;
+  color: $brand-color-dark;
   text-align: center;
   text-decoration: none;
 }
@@ -53,12 +54,11 @@
   position: relative;
   margin-top: 74px;
   padding-bottom: 50px;
-  color: #fff;
+  color: #000;
   background-color: green;
- // background-image: url('../img/topimg-compressor_3jppsrd.jpg');
-  background-image: url('../img/intro.jpg');
- //background-position: 50% -75px;
-  background-position: 50% 50%;
+ //background-image: url('../img/topimg-compressor_3jppsrd.jpg');
+  background-image: url('../img/intro7.jpg');
+  background-position: 50%  100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -75,21 +75,24 @@
   margin: 0 auto;
   margin-bottom: 100px;
   margin-left: 100px;
-  padding-top: 25px;
+  padding-top: 20px;
   width: 970px;
   font-weight: 300;
 }
 
 .page-header__info-manufacturer {
+  margin: 0;
   width: 300px;
 }
 
 .page-header__info-office-hours {
+  margin: 0;
   width: 300px;
   text-align: center;
 }
 
 .page-header__info-phone {
+  margin: 0;
   width: 150px;
   font-style: italic;
   font-weight: bold;
@@ -131,13 +134,13 @@
 
 .page-header__offer {
   position: relative;
-  margin-left: 400px;
+  margin-left: 70px;
   width: 770px;
 }
 
 .page-header__offer-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 24px;
 }
 
@@ -149,11 +152,11 @@
 
 .page-header__offer-list {
   padding-left: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .page-header__offer-item {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .page-header__offer-img {
@@ -162,7 +165,7 @@
   z-index: 10;
   top: -90px;
   left: -500px;
-  width: 487px;
+ // width: 487px;
 }
 
 .page-header__intro-btn {
@@ -173,5 +176,5 @@
 .page-header__offer-video {
   position: absolute;
   top: -100px;
-  right: 0;
+  right: -250px;
 }

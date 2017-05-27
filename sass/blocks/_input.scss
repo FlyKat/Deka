@@ -1,0 +1,15 @@
+.input {
+  width: 375px;
+  height: 46px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 23px;
+  outline: none;
+
+  &:active,
+  &:focus {
+    border-color: blue;
+    box-shadow: 0px 7px 7px 0px rgba(138, 137, 136, 0.7);
+  }
+}

@@ -1,28 +1,73 @@
 .ready-product {
-  width: 280px;
+  position: relative;
+  padding: 10px 30px 10px 30px;
+  width: 220px;
   text-align:center;
   border-radius: 10px;
   background-color: #fff;
+
+  &:hover .ready-product__desc {
+      display: block;
+}
+}
+
+.ready-product__mark {
+  &--hit {
+    position: absolute;
+    top: -25px;
+    right: -15px;
+  }
+
+  &--sale {
+    position: absolute;
+    top: 175px;
+    right: 10px;
+  }
 }
 
 .ready-product__title {
+  margin: 0;
   margin-bottom: 18px;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+.ready-product__desc {
+  position: absolute;
+  top: 45px;
+  left: 30px;
+  display: none;
+  padding: 10px;
+  width: 196px;
+  height: 135px;
+  font-size: 15px;
+  text-align: left;
+  border: 1px solid $brand-color;
+  background-color: $main-color;
+}
+
+.ready-product__desc-item {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.ready-product__desc-item span {
+  font-weight: bold;
+}
+
 .ready-product__img {
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .ready-product__price {
-  margin: 0 auto;
+ // margin: 0 auto;
   margin-bottom: 20px;
   width: 216px;
   font-size: 18px;
   font-weight: 500;
-  border: 1px solid #88d6a0;
+  border: 1px solid $brand-color;
 }
 
 .ready-product__price-text {
@@ -34,11 +79,11 @@
 }
 
 .ready-product__price-old {
-  clor: #a9a9a9;
+  color: $text-color-mutted;
   text-decoration: line-through;
 }
 
-.ready-product__btn {
+.ready-product__btn-details {
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -50,24 +95,25 @@
   color: #fff;
   text-decoration: none;
   border-radius: 13px;
-  background: linear-gradient(to bottom, #7cb02e 0%, #2b9540 100%);
+  background: linear-gradient(to bottom, $brand-color 0%, $brand-color-dark 100%);
   box-shadow: 0px 2px 2px 0px rgba(22, 86, 28, 0.8);
   box-sizing: border-box;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: linear-gradient(to bottom, #70b577 0%, #62ae69 100%);
     box-shadow: 0px 2px 2px 0px #16561c;
   }
 
   &:active {
-     background: linear-gradient(to top, #7cb02e 0%, #2b9540 100%);
+     background: linear-gradient(to top, $brand-color 0%, $brand-color-dark 100%);
      box-shadow: inset 0px 2px 2px 0px #16561c;
   }
 }
 
 .ready-product__order-btn {
-  margin: 0 auto;
+ //margin: 0 auto;
   margin-bottom: 20px;
   width: 220px;
   height: 50px;

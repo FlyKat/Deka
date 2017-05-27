@@ -1,9 +1,12 @@
 @import 'mixins';
+@import 'variables';
 @import 'global/normalize';
 @import 'global/scaffolding';
 @import 'blocks/page-header';
 @import 'blocks/promo-video';
 @import 'blocks/btn';
+@import 'blocks/input';
+@import 'blocks/mark';
 @import 'blocks/action';
 @import 'blocks/application';
 @import 'blocks/counter';
@@ -22,3 +25,9 @@
 @import 'blocks/consultation';
 @import 'blocks/certification';
 @import 'blocks/map';
+@import 'blocks/page-footer';
+@import 'blocks/modal-details';
+@import 'blocks/modal-estimate';
+@import 'blocks/modal-order';
+@import 'blocks/modal-consultation';
+@import 'blocks/modal-help';

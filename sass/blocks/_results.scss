@@ -1,11 +1,12 @@
 .results {
   padding-top: 50px;
   padding-bottom: 70px;
-  border-bottom: 3px solid #2b9540;
+  border-bottom: 3px solid $brand-color-dark;
 }
 
 .results__inner {
   @include container();
+  width: 980px;
 }
 
 .results__title {

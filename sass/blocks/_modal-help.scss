@@ -1,0 +1,37 @@
+.modal-help {
+  position: relative;
+  display: none;
+  padding: 60px 45px 45px 45px;
+  width: 380px;
+  color: #fff;
+  border-radius: 20px;
+  background: linear-gradient(to bottom,#98c23b 0%,#1e7c25 100%);
+}
+
+.modal-help__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 22px;
+  color: #fff;
+  background-color: #98c23b;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-help__text {
+  width: 320px;
+  font-size: 20px;
+
+  &--big {
+    text-transform: uppercase;
+  }
+}
+
+.modal-help__form-input {
+  margin-bottom: 15px;
+}
+
+.modal-help__form-btn {
+  width: 380px;
+}

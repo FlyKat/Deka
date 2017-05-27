@@ -1,7 +1,7 @@
 .gallery {
   padding: 50px 0;
-  border-bottom: 3px solid #2b9540;
-  background-color: #ebebeb;
+  border-bottom: 3px solid $brand-color-dark;
+  background-color: $grey-background;
 }
 
 .gallery__inner {
@@ -24,10 +24,7 @@
   margin-bottom: 25px;
 }
 
-#gallery-slide1, #gallery-slide2, #gallery-slide3, #gallery-slide4, #gallery-slide5, #gallery-slide6, #gallery-slide7, #gallery-slide8,
-#gallery-slide9, #gallery-slide10 {
-  display: none;
-}
+
 
 .gallery__imgs {
   display: flex;
@@ -55,7 +52,7 @@
   margin: 0 auto;
 }
 
-.gallery__arrow {
+.gallery__btn {
   @include img-replacement;
   position: absolute;
   top: 280px;
@@ -72,14 +69,14 @@
   }
 }
 
-.gallery__controls {
- //@include img-replacement;
+/*.gallery__pagination {
+// @include img-replacement;
   position: absolute;
   top: 450px;
   left: 300px;
   width: 330px;
   outline: 1px solid red;
-}
+}*/
 
 .gallery__slogan {
   margin-left: auto;

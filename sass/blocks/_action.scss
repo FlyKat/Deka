@@ -49,12 +49,55 @@
 }
 
 .action__present {
+  position: relative;
   margin-bottom: 15px;
   padding: 15px;
   width: 315px;
-  height: 60px;
+  font-size: 18px;
   color: #fff;
   border-radius: 15px;
   box-sizing: border-box;
-  background-color: #2b9540;
+  background-color: $brand-color;
+  cursor: pointer;
+
+  &--service {
+   background: linear-gradient(to bottom, $brand-color 0%, $brand-color-dark 100%);
+  }
+
+  &--project {
+     background-color: $brand-color-dark;
+  }
+
+  &:hover .action__present-desc {
+    display: block;
+  }
+
+  &::before {
+    content: "i";
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid $main-color;
+    border-radius: 50%;
+  }
+}
+
+.action__present-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  margin: 0;
+  padding: 15px;
+  width: 315px;
+  height: 60px;
+  font-size: 13px;
+  color: $text-color-main;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: $grey-background;
 }

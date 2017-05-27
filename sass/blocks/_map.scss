@@ -1,7 +1,7 @@
 .map {
   position: relative;
   height: 450px;
-  border-bottom: 3px solid #2b9540;
+  border-bottom: 3px solid $brand-color-dark;
 }
 
 .map__contacts {
@@ -13,7 +13,7 @@
   width: 275px;
   height: 65px;
   text-align: center;
-  background-color: #fff;
+  background-color: $main-color;
 }
 
 .map__contacts-text {

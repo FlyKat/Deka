@@ -1,9 +1,9 @@
 .work-description {
   min-height: 800px;
-  border-bottom: 3px solid #2b9540;
+  border-bottom: 3px solid $brand-color-dark;
  /* background: url('../img/shema-s1_qxuk3lb.jpg') 100% 0% no-repeat,
               url('../img/shema-pr1_x1pprvi.jpg') 100% 100% no-repeat;*/
-  background: url('../img/process-img.png') 100% 50% no-repeat;
+  background: url('../img/process-img.png') 50% 50% no-repeat;
 }
 
 .work-description__inner {
@@ -46,7 +46,7 @@
     text-align: center;
     color: #fff;
     border-radius: 5px;
-    background-color: #2b9540;
+    background-color: $brand-color-dark;
   }
 
   &--2 {

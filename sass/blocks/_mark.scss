@@ -1,0 +1,16 @@
+.mark {
+  @include img-replacement;
+  background-repeat: no-repeat;
+
+  &--hit {
+    background-image: url('../img/hit.gif');
+    width: 94px;
+    height: 90px;
+  }
+
+  &--sale {
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/big-20-white_1.png');
+  }
+}

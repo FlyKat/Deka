@@ -3,7 +3,7 @@
   width: 375px;
   color: #fff;
   border-radius: 10px;
-  background-color: #2b9540;
+  background: linear-gradient(to bottom,#98c23b 0%,#1e7c25 100%);
 }
 
 .application__form-btn {
@@ -28,30 +28,12 @@
 
 .application__form-input {
   margin-bottom: 15px;
-  padding: 0 15px;
   width: 375px;
-  height: 46px;
-  box-sizing: border-box;
-  border-radius: 23px;
-  border: none;
-  outline: none;
-
-  &:focus {
-    border-color: blue;
-    border-radius: 23px;
-  }
 }
 
 .application__form-btn {
   margin-top: 25px;
   margin-bottom: 30px;
-  border: none;
-  outline: none;
-
-  &:focus {
-    border-color: blue;
-    border-radius: 23px;
-  }
 }
 
 .application__note {

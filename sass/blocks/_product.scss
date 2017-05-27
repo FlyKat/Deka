@@ -3,17 +3,18 @@
   width: 270px;
   text-align: center;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: $main-color;
 }
 
 .product__view {
   margin-bottom: 25px;
   padding-top: 6px;
-  border: 1px solid #d3d3d3;
+  border: 1px solid $grey-color;
 }
 
 .product__img {
   display: block;
+  overflow: hidden;
 }
 
 .product__title {
@@ -24,7 +25,7 @@
   font-weight: normal;
   line-height: 30px;
   color: #222;
-  background-color: #d3d3d3;
+  background-color: $grey-color;
 }
 
 .product__characteristics {
@@ -62,11 +63,11 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
-  border: 1px solid #88d6a0;
+  border: 1px solid $brand-color-dark;
 }
 
 .product__btn {
   margin: 0 auto;
   padding: 15px 3px;
-  width: 180px;
+  width: 200px;
 }

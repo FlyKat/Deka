@@ -1,0 +1,76 @@
+.page-footer {
+  padding: 20px 0;
+}
+
+.page-footer__inner {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1170px;
+}
+
+.page-footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.page-footer__company {
+  width: 300px;
+}
+
+.page-footer__company p {
+  margin: 0;
+}
+
+.page-footer__office-hours {
+  width: 300px;
+  text-align: center;
+}
+
+.page-footer__phone {
+  width: 300px;
+  text-align: right;
+}
+
+.page-footer__phone-text {
+  margin: 0;
+}
+
+.page-footer__phone-text {
+  margin: 0;
+}
+
+.page-footer__phone-number {
+  margin: 0;
+}
+
+.page-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__copyright {
+  width: 300px;
+}
+
+.page-footer__copyright p {
+  margin: 0;
+}
+
+.page-footer__payment {
+  width: 300px;
+  text-align: center;
+}
+
+.page-footer__email {
+  width: 300px;
+  text-align: right;
+}
+
+.page-footer__email-text {
+  margin: 0;
+}

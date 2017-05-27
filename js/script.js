@@ -1,3 +1,5 @@
+//map
+
 ymaps.ready(init);
 
 function init() {
@@ -27,10 +29,62 @@ function init() {
   myMap.geoObjects.add(myPlacemark);
 }
 
+//modal-estimate
+var estimate = document.querySelctor('.page-header__offer-btn');
+var popup = document.querySelctor('.modal-estimate');
+var close = document.querySelctor('.modal-estimate__close');
 
-/*var swiper = new Swiper('.gallery-items', {
-        pagination: '.gallery-controls',
+var form = popup.querySelector('form')
+
+
+estimate.addEdventListener('click', function(event) {
+  event.preventDefault();
+  popup.classList.add('modal-estimate-show');
+});
+
+close.addEventListener('click', function(event) {
+  event.preventDefault();
+  popup.classList.remove('modal-estimate-show');
+  popup.classList.remove('modal-estimate-error');
+});
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode == 27) {
+    if (popup.classList.contains("modal-estimate-show")) {
+      popup.classList.remove("modal-estimate-show");
+      popup.classList.remove("modal-estimate-error");
+    }
+  }
+});
+
+
+
+
+
+//gallery-slider
+var gallerySwiper = new Swiper('.gallery__inner', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
         paginationClickable: true,
-        nextButton: '.gallary-arrow--prev',
-        prevButton: '.gallery-arrow--next',
-        spaceBetween: 30*/
+        spaceBetween: 30,
+        loop: true
+    });
+
+//reviews-slider
+var reviewsSwiper = new Swiper('.reviews__inner', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
+
+//certificaction-slider
+var certificationSwiper = new Swiper('.certification__group', {
+        nextButton: '.certification__btn--next',
+        prevButton: '.certification__btn--prev',
+        slidesPerView: 3,
+        loop: true
+    });

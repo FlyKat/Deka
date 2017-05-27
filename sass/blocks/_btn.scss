@@ -9,16 +9,19 @@
   color: #fff;
   text-decoration: none;
   border-radius: 25px;
+   border: none;
   background: linear-gradient(to bottom, #f26843 0%, #e74b35 100%);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   box-sizing: border-box;
+  outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
     box-shadow: 0px 2px 2px 0px #ac1000;
   }
 
-  &:active {
+  &:active  {
      background: linear-gradient(to top, #f26843 0%, #e74b35 100%);
      box-shadow: inset 0px 2px 2px 0px #952718;
   }
