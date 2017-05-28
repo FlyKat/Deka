@@ -1,4 +1,5 @@
 .work-description {
+  padding-top: 50px;
   min-height: 800px;
   border-bottom: 3px solid $brand-color-dark;
  /* background: url('../img/shema-s1_qxuk3lb.jpg') 100% 0% no-repeat,
@@ -13,7 +14,6 @@
 .work-description__title {
   margin: 0;
   margin-bottom: 45px;
-  padding-top: 50px;
   width: 250px;
   font-size: 22px;
   font-weight: normal;
@@ -24,11 +24,14 @@
 }
 
 .work-description__list {
+  position: relative;
   list-style: none;
 }
 
 .work-description__item {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   margin-bottom: 25px;
   width: 320px;
   font-weight: 300;
@@ -50,24 +53,33 @@
   }
 
   &--2 {
+    top: 0;
+    left: 500px;
     &::before {
       content: "2";
     }
   }
 
   &--3 {
+    top: 350px;
+    left: 0;
+    width: 250px;
     &::before {
       content: "3";
     }
   }
 
   &--4 {
+    top: 450px;
+    left: 350px;
     &::before {
       content: "4";
     }
   }
 
   &--5 {
+    top: 400px;
+    left: 750px;
     &::before {
       content: "5";
     }

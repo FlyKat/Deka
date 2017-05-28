@@ -838,7 +838,7 @@ body {
 .ready-products__title {
   margin-bottom: 50px;
   font-size: 22px;
-  font-wight: 500;
+  font-weight: 500;
   color: #fff;
   text-transform: uppercase; }
 
@@ -1334,6 +1334,7 @@ body {
   display: block; }
 
 .work-description {
+  padding-top: 50px;
   min-height: 800px;
   border-bottom: 3px solid #1e7c25;
   /* background: url('../img/shema-s1_qxuk3lb.jpg') 100% 0% no-repeat,
@@ -1348,7 +1349,6 @@ body {
 .work-description__title {
   margin: 0;
   margin-bottom: 45px;
-  padding-top: 50px;
   width: 250px;
   font-size: 22px;
   font-weight: normal; }
@@ -1357,10 +1357,13 @@ body {
   text-transform: uppercase; }
 
 .work-description__list {
+  position: relative;
   list-style: none; }
 
 .work-description__item {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   margin-bottom: 25px;
   width: 320px;
   font-weight: 300; }
@@ -1378,14 +1381,27 @@ body {
     color: #fff;
     border-radius: 5px;
     background-color: #1e7c25; }
-  .work-description__item--2::before {
-    content: "2"; }
-  .work-description__item--3::before {
-    content: "3"; }
-  .work-description__item--4::before {
-    content: "4"; }
-  .work-description__item--5::before {
-    content: "5"; }
+  .work-description__item--2 {
+    top: 0;
+    left: 500px; }
+    .work-description__item--2::before {
+      content: "2"; }
+  .work-description__item--3 {
+    top: 350px;
+    left: 0;
+    width: 250px; }
+    .work-description__item--3::before {
+      content: "3"; }
+  .work-description__item--4 {
+    top: 450px;
+    left: 350px; }
+    .work-description__item--4::before {
+      content: "4"; }
+  .work-description__item--5 {
+    top: 400px;
+    left: 750px; }
+    .work-description__item--5::before {
+      content: "5"; }
 
 .work-description__item span {
   font-weight: bold; }
