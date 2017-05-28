@@ -50,6 +50,24 @@
   }
 }
 
+.product__characteristics-img {
+  position: relative;
+  display: block;
+
+  &:hover::after {
+    content: atrr(data-title);
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 50px;
+    z-index: 10;
+    font-size: 12px;
+    font-weight: 300;
+    border: 1px solid $brand-color-tip;
+    background: $brand-color-tip2;
+  }
+ }
+
 .product__characteristics-info {
   width: 70px;
   text-align: center;
