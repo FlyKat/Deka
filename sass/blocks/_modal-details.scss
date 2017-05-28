@@ -1,5 +1,8 @@
 .modal-details {
   position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
   padding: 15px 30px;
   width: 500px;
@@ -8,6 +11,8 @@
   background-image: url('../img/logo-new.png');
   background-repeat: no-repeat;
   background-position: 75% 75%;
+  z-index: 2000;
+  overflow-y: auto;
 }
 
 .modal-details__close {
@@ -84,4 +89,19 @@
   margin: 0;
   font-weight: 300;
   text-align: center;
+}
+
+.modal-details--home--show {
+  position: fixed;
+  display: block;
+}
+
+.modal-details--dacha--show {
+  position: fixed;
+  display: block;
+}
+
+.modal-details--cottage--show {
+  position: fixed;
+  display: block;
 }

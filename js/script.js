@@ -1,5 +1,3 @@
-//map
-
 ymaps.ready(init);
 
 function init() {
@@ -29,33 +27,158 @@ function init() {
   myMap.geoObjects.add(myPlacemark);
 }
 
-//modal-estimate
-var estimate = document.querySelctor('.page-header__offer-btn');
-var popup = document.querySelctor('.modal-estimate');
-var close = document.querySelctor('.modal-estimate__close');
 
-var form = popup.querySelector('form')
+var estimate = document.querySelector('.page-header__offer-btn');
+var popupEstimate = document.querySelector('.modal-estimate');
+var overlay = document.querySelector('.overlay');
+var closeEstimate = document.querySelector('.modal-estimate__close');
 
 
-estimate.addEdventListener('click', function(event) {
+estimate.addEventListener('click', function(event) {
   event.preventDefault();
-  popup.classList.add('modal-estimate-show');
+  popupEstimate.classList.add('modal-estimate--show');
+  overlay.classList.add('overlay--show');
 });
 
-close.addEventListener('click', function(event) {
+closeEstimate.addEventListener('click', function(event) {
   event.preventDefault();
-  popup.classList.remove('modal-estimate-show');
-  popup.classList.remove('modal-estimate-error');
+  popupEstimate.classList.remove('modal-estimate--show');
+  overlay.classList.remove('overlay--show');
 });
 
-window.addEventListener("keydown", function(event) {
+window.addEventListener('keydown', function(event) {
   if (event.keyCode == 27) {
-    if (popup.classList.contains("modal-estimate-show")) {
-      popup.classList.remove("modal-estimate-show");
-      popup.classList.remove("modal-estimate-error");
+    if (popupEstimate.classList.contains('modal-estimate--show')) {
+      popupEstimate.classList.remove('modal-estimate--show');
+      overlay.classList.remove('overlay--show');
+      }
     }
-  }
 });
+
+
+
+var order = document.querySelector('.ready-product__order-btn');
+var popupOrder = document.querySelector('.modal-order');
+var overlay = document.querySelector('.overlay');
+var closeOrder = document.querySelector('.modal-order__close');
+
+
+if (order !== null) {
+  for (var i = 0; i < order.length; i++) {
+    order[i].addEventListener('click', function (event) {
+      event.preventDefault();
+      popupOrder.classList.add('modal-order--show');
+      overlay.classList.add('overlay--show');
+    });
+  }
+}
+
+closeOrder.addEventListener('click', function(event) {
+  event.preventDefault();
+  popupOrder.classList.remove('modal-order--show');
+  overlay.classList.remove('overlay--show');
+});
+
+window.addEventListener('keydown', function(event) {
+  if (event.keyCode == 27) {
+    if (popupOrder.classList.contains('modal-order--show')) {
+      popupOrder.classList.remove('modal-order--show');
+      overlay.classList.remove('overlay--show');
+      }
+    }
+});
+
+
+
+var consultation = document.querySelector('.product__btn');
+var popupConsultation = document.querySelector('.modal-consultation');
+var overlay = document.querySelector('.overlay');
+var closeConsultation = document.querySelector('.modal-consultation__close');
+
+
+if (consultation !== null) {
+  for (var i = 0; i < consultation.length; i++) {
+    consultation[i].addEventListener('click', function (event) {
+      event.preventDefault();
+      popupConsultation.classList.add('modal-consultation--show');
+      overlay.classList.add('overlay--show');
+    });
+  }
+}
+
+closeConsultation.addEventListener('click', function(event) {
+  event.preventDefault();
+  popupConsultation.classList.remove('modal-consultation--show');
+  overlay.classList.remove('overlay--show');
+});
+
+window.addEventListener('keydown', function(event) {
+  if (event.keyCode == 27) {
+    if (popupConsultation.classList.contains('modal-consultation--show')) {
+      popupConsultation.classList.remove('modal-consultation--show');
+      overlay.classList.remove('overlay--show');
+      }
+    }
+});
+
+
+var help = document.querySelector('.products__btn');
+var popupHelp = document.querySelector('.modal-help');
+var overlay = document.querySelector('.overlay');
+var closeHelp = document.querySelector('.modal-help__close');
+
+
+help.addEventListener('click', function(event) {
+  event.preventDefault();
+  popupHelp.classList.add('modal-help--show');
+  overlay.classList.add('overlay--show');
+});
+
+closeHelp.addEventListener('click', function(event) {
+  event.preventDefault();
+  popupHelp.classList.remove('modal-help--show');
+  overlay.classList.remove('overlay--show');
+});
+
+window.addEventListener('keydown', function(event) {
+  if (event.keyCode == 27) {
+    if (popupHelp.classList.contains('modal-help--show')) {
+      popupHelp.classList.remove('modal-help--show');
+      overlay.classList.remove('overlay--show');
+      }
+    }
+});
+
+
+
+var detailsHome = document.querySelector('.ready-product__btn-details--home');
+var popupHome = document.querySelector('.modal-details--home');
+var overlay = document.querySelector('.overlay');
+var closeHome = document.querySelector('.modal-details__close--home');
+
+
+detailsHome.addEventListener('click', function(event) {
+  event.preventDefault();
+  popupHome.classList.add('modal-details--home--show');
+  overlay.classList.add('overlay--show');
+});
+
+closeHome.addEventListener('click', function(event) {
+  event.preventDefault();
+  popupHelp.classList.remove('modal-details--home--show');
+  overlay.classList.remove('overlay--show');
+});
+
+window.addEventListener('keydown', function(event) {
+  if (event.keyCode == 27) {
+    if (popupHome.classList.contains('modal-details--home--show')) {
+      popupHome.classList.remove('modal-details--home--show');
+      overlay.classList.remove('overlay--show');
+      }
+    }
+});
+
+
 
 
 

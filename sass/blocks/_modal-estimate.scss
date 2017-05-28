@@ -1,11 +1,16 @@
 .modal-estimate {
   position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
   padding: 60px 45px 45px 45px;
   width: 380px;
   color: #fff;
   border-radius: 20px;
-  background: linear-gradient(to bottom,#98c23b 0%,#1e7c25 100%);
+  background: linear-gradient(to bottom, $brand-color 0%, $brand-color-dark 100%);
+  z-index: 2000;
+  overflow-y: auto;
 }
 
 .modal-estimate__close {
@@ -13,8 +18,8 @@
   top: 15px;
   right: 15px;
   font-size: 22px;
-  color: #fff;
-  background-color: #98c23b;
+  color: $main-color;
+  background-color: $brand-color;
   border: none;
   cursor: pointer;
 }
@@ -34,4 +39,9 @@
 
 .modal-estimate__form-btn {
   width: 380px;
+}
+
+.modal-estimate--show {
+  position: fixed;
+  display: block;
 }

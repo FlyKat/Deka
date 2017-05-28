@@ -1,11 +1,16 @@
 .modal-order {
   position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
   padding: 60px 45px 45px 45px;
   width: 380px;
   color: #fff;
   border-radius: 20px;
   background: linear-gradient(to bottom,#98c23b 0%,#1e7c25 100%);
+  z-index: 2000;
+  overflow-y: auto;
 }
 
 .modal-order__close {
@@ -34,4 +39,9 @@
 
 .modal-order__form-btn {
   width: 380px;
+}
+
+.modal-order--show {
+  position: fixed;
+  display: block;
 }
