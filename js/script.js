@@ -57,9 +57,8 @@ window.addEventListener('keydown', function(event) {
 
 
 
-var order = document.querySelector('.ready-product__order-btn');
+var order = document.querySelectorAll('.ready-product__order-btn');
 var popupOrder = document.querySelector('.modal-order');
-var overlay = document.querySelector('.overlay');
 var closeOrder = document.querySelector('.modal-order__close');
 
 
@@ -90,9 +89,8 @@ window.addEventListener('keydown', function(event) {
 
 
 
-var consultation = document.querySelector('.product__btn');
+var consultation = document.querySelectorAll('.product__btn');
 var popupConsultation = document.querySelector('.modal-consultation');
-var overlay = document.querySelector('.overlay');
 var closeConsultation = document.querySelector('.modal-consultation__close');
 
 
@@ -124,7 +122,6 @@ window.addEventListener('keydown', function(event) {
 
 var help = document.querySelector('.products__btn');
 var popupHelp = document.querySelector('.modal-help');
-var overlay = document.querySelector('.overlay');
 var closeHelp = document.querySelector('.modal-help__close');
 
 
@@ -153,30 +150,84 @@ window.addEventListener('keydown', function(event) {
 
 var detailsHome = document.querySelector('.ready-product__btn-details--home');
 var popupHome = document.querySelector('.modal-details--home');
-var overlay = document.querySelector('.overlay');
 var closeHome = document.querySelector('.modal-details__close--home');
 
 
 detailsHome.addEventListener('click', function(event) {
   event.preventDefault();
-  popupHome.classList.add('modal-details--home--show');
+  popupHome.classList.add('modal-details--show');
   overlay.classList.add('overlay--show');
 });
 
 closeHome.addEventListener('click', function(event) {
   event.preventDefault();
-  popupHelp.classList.remove('modal-details--home--show');
+  popupHome.classList.remove('modal-details--show');
   overlay.classList.remove('overlay--show');
 });
 
 window.addEventListener('keydown', function(event) {
   if (event.keyCode == 27) {
-    if (popupHome.classList.contains('modal-details--home--show')) {
-      popupHome.classList.remove('modal-details--home--show');
+    if (popupHome.classList.contains('modal-details--show')) {
+      popupHome.classList.remove('modal-details--show');
       overlay.classList.remove('overlay--show');
       }
     }
 });
+
+
+var detailsDacha = document.querySelector('.ready-product__btn-details--dacha');
+var popupDacha = document.querySelector('.modal-details--dacha');
+var closeDacha = document.querySelector('.modal-details__close--dacha');
+
+
+detailsDacha.addEventListener('click', function(event) {
+  event.preventDefault();
+  popupDacha.classList.add('modal-details--show');
+  overlay.classList.add('overlay--show');
+});
+
+closeDacha.addEventListener('click', function(event) {
+  event.preventDefault();
+  popupDacha.classList.remove('modal-details--show');
+  overlay.classList.remove('overlay--show');
+});
+
+window.addEventListener('keydown', function(event) {
+  if (event.keyCode == 27) {
+    if (popupDacha.classList.contains('modal-details--show')) {
+      popupDacha.classList.remove('modal-details--show');
+      overlay.classList.remove('overlay--show');
+      }
+    }
+});
+
+
+var detailsCottage = document.querySelector('.ready-product__btn-details--cottage');
+var popupCottage = document.querySelector('.modal-details--cottage');
+var closeCottage = document.querySelector('.modal-details__close--cottage');
+
+
+detailsCottage.addEventListener('click', function(event) {
+  event.preventDefault();
+  popupCottage.classList.add('modal-details--show');
+  overlay.classList.add('overlay--show');
+});
+
+closeCottage.addEventListener('click', function(event) {
+  event.preventDefault();
+  popupCottage.classList.remove('modal-details--show');
+  overlay.classList.remove('overlay--show');
+});
+
+window.addEventListener('keydown', function(event) {
+  if (event.keyCode == 27) {
+    if (popupCottage.classList.contains('modal-details--show')) {
+      popupCottage.classList.remove('modal-details--show');
+      overlay.classList.remove('overlay--show');
+      }
+    }
+});
+
 
 
 

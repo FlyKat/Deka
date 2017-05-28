@@ -1879,9 +1879,9 @@ body {
   display: none;
   padding: 15px 30px;
   width: 500px;
-  border: 1px solid green;
   border-radius: 20px;
   background-image: url("../img/logo-new.png");
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: 75% 75%;
   z-index: 2000;
@@ -1952,15 +1952,7 @@ body {
   font-weight: 300;
   text-align: center; }
 
-.modal-details--home--show {
-  position: fixed;
-  display: block; }
-
-.modal-details--dacha--show {
-  position: fixed;
-  display: block; }
-
-.modal-details--cottage--show {
+.modal-details--show {
   position: fixed;
   display: block; }
 
