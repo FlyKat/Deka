@@ -1,0 +1,20 @@
+.thank-you {
+  background-image: url('../img/space.png');
+  background-position: 50%  100%;
+  background-repeat: no-repeat;
+}
+
+.thank-you__inner {
+  @include container();
+  margin-top: 74px;
+  padding: 100px;
+  text-align: center;
+}
+
+.thank-you__title {
+  font-size: 42px;
+}
+
+.thank-you__text {
+  font-size: 30px;
+}

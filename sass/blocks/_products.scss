@@ -1,8 +1,8 @@
 .products {
   //min-height: 1246px;
   padding: 45px 0;
-  background-color: #6ec57f;
-  background-image: url('../img/products.jpg');
+  background-color: $brand-color;
+  background-image: url('../img/products2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -21,6 +21,7 @@
   font-size: 22px;
   font-weight: 500;
   color: #fff;
+  text-shadow: 1px 1px 3px #000;
 }
 
 .products__title span {
@@ -93,19 +94,32 @@
   font-size: 14px;
   line-height: 17px;
   color: #fff;
+  text-shadow: 1px 1px 3px #000;
 }
 
 .products__info {
+  position: relative;
   margin: 0 auto;
   margin-bottom: 50px;
   padding: 15px 65px;
   width: 510px;
   font-size: 18px;
-  line-heught: 24px;
+  line-height: 24px;
   text-align: center;
   color: #fff;
+  text-shadow: 1px 1px 3px #000;
   border: 3px solid $brand-color-dark;
   border-radius: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 110px;
+    left: -70px;
+    width: 122px;
+    height: 135px;
+    background-image: url('../img/arrowdown2.png');
+  }
 }
 
 .products__btn {

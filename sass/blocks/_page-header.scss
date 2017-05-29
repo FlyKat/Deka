@@ -54,7 +54,8 @@
   position: relative;
   margin-top: 74px;
   padding-bottom: 50px;
-  color: #000;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
   background-color: green;
  //background-image: url('../img/topimg-compressor_3jppsrd.jpg');
   background-image: url('../img/intro7.jpg');
@@ -175,6 +176,6 @@
 
 .page-header__offer-video {
   position: absolute;
-  top: -100px;
-  right: -250px;
+  top: 100px;
+  right: 180px;
 }

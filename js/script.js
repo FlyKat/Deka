@@ -170,8 +170,8 @@ window.addEventListener('keydown', function(event) {
     if (popupHome.classList.contains('modal-details--show')) {
       popupHome.classList.remove('modal-details--show');
       overlay.classList.remove('overlay--show');
-      }
     }
+  }
 });
 
 
@@ -229,13 +229,6 @@ window.addEventListener('keydown', function(event) {
 });
 
 
-
-
-
-
-
-
-//gallery-slider
 var gallerySwiper = new Swiper('.gallery__inner', {
         pagination: '.swiper-pagination',
         nextButton: '.swiper-button-next',
@@ -246,7 +239,7 @@ var gallerySwiper = new Swiper('.gallery__inner', {
         loop: true
     });
 
-//reviews-slider
+
 var reviewsSwiper = new Swiper('.reviews__inner', {
         pagination: '.swiper-pagination',
         slidesPerView: 1,
@@ -255,10 +248,10 @@ var reviewsSwiper = new Swiper('.reviews__inner', {
         loop: true
     });
 
-//certificaction-slider
-var certificationSwiper = new Swiper('.certification__group', {
-        nextButton: '.certification__btn--next',
-        prevButton: '.certification__btn--prev',
+var certificationSwiper = new Swiper('.certification__list-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
         slidesPerView: 3,
+        centeredSlides: true,
         loop: true
     });

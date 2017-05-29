@@ -25,6 +25,7 @@
 .reviews__item {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .reviews__info {
@@ -48,14 +49,10 @@
   margin-right: 10px;
 }
 
-/*.reviews__pagination {
-//  @include img-replacement;
+.reviews__pagination {
   position: absolute;
-  top: 450px;
-  left: 650px;
-  width: 90px;
-  outline: 1px solid red;
-}*/
+  top: 430px;
+ }
 
 .reviews__pagination-item {
   border: 1px solid red;

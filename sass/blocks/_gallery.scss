@@ -1,5 +1,5 @@
 .gallery {
-  padding: 50px 0;
+  padding: 30px 0;
   border-bottom: 3px solid $brand-color-dark;
   background-color: $grey-background;
 }
@@ -69,14 +69,10 @@
   }
 }
 
-/*.gallery__pagination {
-// @include img-replacement;
+.gallery__pagination {
   position: absolute;
-  top: 450px;
-  left: 300px;
-  width: 330px;
-  outline: 1px solid red;
-}*/
+  top: 480px;
+ }
 
 .gallery__slogan {
   margin-left: auto;

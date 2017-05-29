@@ -17,12 +17,12 @@
           </a>
           <nav class="page-header__nav">
             <a class="page-header__nav-link" href="#">Главная</a>
-            <a class="page-header__nav-link" href="#">Акция</a>
-            <a class="page-header__nav-link" href="#">Все предложения</a>
-            <a class="page-header__nav-link" href="#">Преимущества</a>
-            <a class="page-header__nav-link" href="#">Как работает</a>
-            <a class="page-header__nav-link" href="#">Галерея</a>
-            <a class="page-header__nav-link" href="#">Контакты</a>
+            <a class="page-header__nav-link" href="#action-scroll">Акция</a>
+            <a class="page-header__nav-link" href="#products-scroll">Все предложения</a>
+            <a class="page-header__nav-link" href="#advantages-scroll">Преимущества</a>
+            <a class="page-header__nav-link" href="#work-description-scroll">Как работает</a>
+            <a class="page-header__nav-link" href="#gallery-scroll">Галерея</a>
+            <a class="page-header__nav-link" href="#map">Контакты</a>
           </nav>
           <a class="page-header__top-phone" href="tel:88124218013">8 (812) 421-80-13</a>
         </div>
@@ -59,7 +59,7 @@
       </section>
     </header>
     <main>
-      <section class="action">
+      <section class="action"  id="action-scroll">
         <h2 class="action__title">Акция!</h2>
         <div class="action__inner">
           <div class="action__info">
@@ -278,7 +278,7 @@
           </ul>
         </div>
       </section>
-      <section class="products">
+      <section class="products" id="products-scroll">
         <div class="products__inner">
           <h2 class="products__title"><span class="">Выберите &laquo;БиоДека&raquo;</span><br>для вашего дома</h2>
           <div class="products__group">
@@ -1023,7 +1023,7 @@
           <a class="btn  products__btn" href="#">Получить консультацию по &laquo;Биодека&raquo;</a>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages-scroll">
         <div class="advantages__inner">
           <h2 class="advantages__title"><span>Знаете ли вы о преимуществах,</span> станций&nbsp;биологической очистки &laquo;БиоДека&raquo;?</h2>
           <div class="advantages__info">
@@ -1057,7 +1057,7 @@
           </div>
         </div>
       </section>
-      <section class="work-description">
+      <section class="work-description" id="work-description-scroll">
         <div class="work-description__inner">
           <h2 class="work-description__title"><span>Как будет работать</span> Ваша &laquo;Биодека&raquo;:</h2>
           <ul class="work-description__list">
@@ -1069,7 +1069,7 @@
           </ul>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="gallery-scroll">
         <div class="gallery__inner  swiper-container">
           <h2 class="gallery__title"><span>Посмотрите</span><br>наши работы</h2>
           <div class="gallery__items  swiper-wrapper">
@@ -1283,19 +1283,7 @@
                </div>
             </div>
           </div>
-          <div class="gallery__pagination  swiper-pagination">
-            <a class="gallery__pagination-item  " href="#">1</a>
-            <a class="gallery__pagination-item" href="#">2</a>
-            <a class="gallery__pagination-item" href="#">3</a>
-            <a class="gallery__pagination-item" href="#">4</a>
-            <a class="gallery__pagination-item" href="#">5</a>
-            <a class="gallery__pagination-item" href="#">6</a>
-            <a class="gallery__pagination-item" href="#">7</a>
-            <a class="gallery__pagination-item" href="#">8</a>
-            <a class="gallery__pagination-item" href="#">9</a>
-            <a class="gallery__pagination-item" href="#">10</a>
-            <a class="gallery__pagination-item" href="#">11</a>
-          </div>
+          <div class="gallery__pagination  swiper-pagination"></div>
            <div class="gallery__bnts">
             <a class="gallery__btn  gallery__btn--prev  swiper-button-prev" href="#">Назад</a>
             <a class="gallery__btn gallery__btn--next  swiper-button-next" href="#">Вперед</a>
@@ -1401,11 +1389,7 @@
               </div>
             </div>
           </div>
-          <div class="reviews__pagination  swiper-pagination">
-            <a class="reviews__pagination-item  swiper-pagination-bullet" href="#">1</a>
-            <a class="reviews__pagination-item  swiper-pagination-bullet" href="#">2</a>
-            <a class="reviews__pagination-item  swiper-pagination-bullet" href="#">3</a>
-          </div>
+          <div class="reviews__pagination  swiper-pagination"></div>
         </div>
       </section>
       <section class="instruction">
@@ -1436,38 +1420,40 @@
       </section>
       <section class="certification">
         <div class="certification__inner">
-          <div class="certification__group  swiper-container">
+          <div class="certification__group">
             <h2 class="certification__title">Сертификаты качества и монтажные схемы</h2>
-            <div class="certification__list  swiper-wrapper">
-              <div class="certification__item   swiper-slide">
-                <a href="#">
-                  <img src="img/ezbiodeka1-compressor.png" alt="Сертификат качества" width="248" height="333">
-                </a>
+            <div class="certification__list-container  swiper-container">
+              <div class="certification__list  swiper-wrapper">
+                <div class="certification__item   swiper-slide">
+                  <a href="#">
+                    <img src="img/ezbiodeka1-compressor.png" alt="Сертификат качества" width="248" height="333">
+                  </a>
+                </div>
+                <div class="certification__item   swiper-slide">
+                  <a href="#">
+                    <img src="img/ezbiodeka2-compressor.png" alt="Сертификат качества" width="248" height="333">
+                  </a>
+                </div>
+                <div class="certification__item  swiper-slide">
+                  <a href="#">
+                    <img src="img/ezbiodeka3-compressor.png" alt="Сертификат качества" width="248" height="333">
+                  </a>
+                </div>
+                <div class="certification__item  swiper-slide">
+                  <a href="#">
+                    <img src="img/doctrbiodeka-compressor.png" alt="Сертификат качества" width="248" height="333">
+                  </a>
+                </div>
+                <div class="certification__item  swiper-slide">
+                  <a href="#">
+                    <img src="img/schema-compressor.png" alt="Схема" width="248" height="333">
+                  </a>
+                </div>
               </div>
-              <div class="certification__item   swiper-slide">
-                <a href="#">
-                  <img src="img/ezbiodeka2-compressor.png" alt="Сертификат качества" width="248" height="333">
-                </a>
+              <div class="certification__btns">
+                <a class="certification__btn certification__btn--prev  swiper-button-prev" href="#">Назад</a>
+                <a class="certification__btn certification__btn--next  swiper-button-next" href="#">Вперед</a>
               </div>
-              <div class="certification__item  swiper-slide">
-                <a href="#">
-                  <img src="img/ezbiodeka3-compressor.png" alt="Сертификат качества" width="248" height="333">
-                </a>
-              </div>
-              <div class="certification__item  swiper-slide">
-                <a href="#">
-                  <img src="img/doctrbiodeka-compressor.png" alt="Сертификат качества" width="248" height="333">
-                </a>
-              </div>
-              <div class="certification__item  swiper-slide">
-                <a href="#">
-                  <img src="img/schema-compressor.png" alt="Схема" width="248" height="333">
-                </a>
-              </div>
-            </div>
-            <div class="certification__btns">
-              <a class="certification__btn--prev  swiper-button-prev" href="#">Назад</a>
-              <a class="certification__btn--next  certification__btn--next  swiper-button-next" href="#">Вперед</a>
             </div>
           </div>
         </div>
@@ -1512,7 +1498,7 @@
             <p class="page-footer__email-text">Пишите нам на почту:</p>
             <a class="page-footer__email-link" href="mailto:ya.septik78@yandex.ru">ya.septik78@yandex.ru</a>
           </div>
-        <div>
+        </div>
       </div>
     </footer>
     <section class="modal-details modal-details--home">

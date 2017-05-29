@@ -1,5 +1,8 @@
 .page-footer {
   padding: 20px 0;
+  font-weight: 300;
+  color: $text-color-mutted;
+  border-top: 3px solid $brand-color-dark;
 }
 
 .page-footer__inner {
