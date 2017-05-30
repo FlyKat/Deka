@@ -1,5 +1,6 @@
 .ready-products {
   //background-image: url('../img/8-1-111.jpg');
+  background-color: $brand-color;
   background-image: url('../img/ready-products.jpg');
   background-repeat: no-repeat;
   background_position: 50% 50%;
@@ -8,7 +9,7 @@
 
 .ready-products__inner {
   @include container();
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .ready-products__title {

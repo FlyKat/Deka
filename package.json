@@ -12,6 +12,7 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-csso": "^2.0.0",
     "gulp-imagemin": "^3.1.1",
+    "gulp-jsmin": "^0.1.5",
     "gulp-less": "^3.3.0",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.2.0",
@@ -23,5 +24,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jump.js": "^1.0.2"
+  }
 }

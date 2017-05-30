@@ -255,3 +255,5 @@ var certificationSwiper = new Swiper('.certification__list-container', {
         centeredSlides: true,
         loop: true
     });
+
+

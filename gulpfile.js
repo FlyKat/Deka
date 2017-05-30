@@ -9,6 +9,7 @@ var autoprefixer = require("autoprefixer"); // автопрефикс для б�
 var server = require("browser-sync").create(); //автоперазгрузки браузера
 var mqpacker = require("css-mqpacker"); //обьединение медиавыражения, объединяем «одинаковые селекторы» в одно правило
 var minify = require("gulp-csso"); //минификация css
+var jsmin = require("gulp-jsmin");
 var rename = require("gulp-rename"); // перемейноввывние имя css
 var imagemin = require("gulp-imagemin"); // ужимаем изображение
 var svgstore = require("gulp-svgstore"); // собиральщик cvg
@@ -53,6 +54,13 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
+gulp.task("script", function() {
+  return gulp.src("js/*")
+    .pipe (jsmin())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest("js"))
+});
+
 gulp.task("images", function() {
   return gulp.src("img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
@@ -77,6 +85,7 @@ gulp.task("build", function(fn) {
     "clean",
     "copy",
     "style",
+    "script",
     "images",
     "symbols",
     fn
