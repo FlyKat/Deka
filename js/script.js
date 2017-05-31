@@ -257,4 +257,10 @@ var certificationSwiper = new Swiper('.certification__list-container', {
     });
 
 
-jump('.action-scroll')
+//var options = {};
+//$('a.popup').popup(options);
+
+
+$(document).ready(function() {
+    $(".fancybox").fancybox();
+  });

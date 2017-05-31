@@ -45,7 +45,12 @@
   font-weight: bold;
 }
 
+.reviews__img {
+  display: flex;
+}
+
 .reviews__img-item {
+  display: block;
   margin-right: 10px;
 }
 

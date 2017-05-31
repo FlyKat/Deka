@@ -853,8 +853,7 @@ body {
   min-height: 580px;
   background-image: url("../img/dones-compressor.png");
   background-repeat: no-repeat;
-  background-position: 50% 10px;
-  background-size: cover; }
+  background-position: 50% 10px; }
 
 .ready-products__group-title {
   margin: 0;
@@ -1607,7 +1606,12 @@ body {
 .reviews__text-item {
   font-weight: bold; }
 
+.reviews__img {
+  display: -ms-flexbox;
+  display: flex; }
+
 .reviews__img-item {
+  display: block;
   margin-right: 10px; }
 
 .reviews__pagination {
