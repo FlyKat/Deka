@@ -829,7 +829,7 @@ body {
   background-color: #98c23b;
   background-image: url("../img/ready-products.jpg");
   background-repeat: no-repeat;
-  background_position: 50% 50%;
+  background-position: 50% 50%;
   background-size: cover; }
 
 .ready-products__inner {
@@ -854,7 +854,7 @@ body {
   background-image: url("../img/dones-compressor.png");
   background-repeat: no-repeat;
   background-position: 50% 10px;
-  bakground-size: cover; }
+  background-size: cover; }
 
 .ready-products__group-title {
   margin: 0;
@@ -1678,7 +1678,7 @@ body {
 .instruction__link {
   color: #000;
   text-decoration: none;
-  border-bottom: 1px dashed text-color-main; }
+  border-bottom: 1px dashed #000; }
 
 .instruction__phone {
   font-weight: bold; }

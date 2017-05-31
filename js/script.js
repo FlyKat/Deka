@@ -257,3 +257,4 @@ var certificationSwiper = new Swiper('.certification__list-container', {
     });
 
 
+jump('.action-scroll')
