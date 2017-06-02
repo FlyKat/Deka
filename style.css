@@ -1447,11 +1447,12 @@ body {
 .gallery__item {
   margin-bottom: 25px; }
 
-.gallery__imgs {
+.gallery__img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  margin: 0 auto;
   width: 900px; }
 
 .gallery__info {
@@ -1466,9 +1467,6 @@ body {
 
 .gallery__info-price {
   text-decoration: underline; }
-
-.gallery__imgs {
-  margin: 0 auto; }
 
 .gallery__btn {
   text-indent: 100%;

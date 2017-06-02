@@ -257,10 +257,19 @@ var certificationSwiper = new Swiper('.certification__list-container', {
     });
 
 
-//var options = {};
-//$('a.popup').popup(options);
-
-
 $(document).ready(function() {
-    $(".fancybox").fancybox();
+  $('.reviews__img-item').magnificPopup({
+    type:'image'
   });
+});
+
+  $('.gallery__img-item').magnificPopup({
+    type:'image'
+  });
+
+$('.results__items').magnificPopup({
+  delegate: 'a',
+  type: 'image',
+  gallery:{enabled:true}
+});
+

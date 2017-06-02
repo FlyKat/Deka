@@ -22,8 +22,18 @@
     "run-sequence": "^1.2.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "editorconfig-cli",
+    "build": "gulp build",
+    "start": "gulp serve"
   },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "sass/**/*.{sass,scss}"
+  ],
   "license": "ISC",
   "dependencies": {
     "jump.js": "^1.0.2"
