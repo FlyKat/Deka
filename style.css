@@ -656,7 +656,8 @@ body {
     background-image: url("../img/big-20-white_1.png"); }
 
 .action {
-  padding: 60px 0; }
+  padding-top: 90px;
+  padding-bottom: 60px; }
 
 .action__title {
   position: absolute;
@@ -1065,7 +1066,8 @@ body {
   font-weight: 300; }
 
 .products {
-  padding: 45px 0;
+  padding-top: 90px;
+  padding-bottom: 45px;
   background-color: #98c23b;
   background-image: url("../img/products2.jpg");
   background-repeat: no-repeat;
@@ -1257,7 +1259,8 @@ body {
   width: 200px; }
 
 .advantages {
-  padding: 50px 0;
+  padding-top: 80px;
+  padding-bottom: 50px;
   border-bottom: 3px solid #1e7c25; }
 
 .advantages__inner {
@@ -1352,7 +1355,7 @@ body {
   display: block; }
 
 .work-description {
-  padding-top: 40px;
+  padding-top: 90px;
   min-height: 660px;
   border-bottom: 3px solid #1e7c25;
   /* background: url('../img/shema-s1_qxuk3lb.jpg') 100% 0% no-repeat,
@@ -1366,7 +1369,7 @@ body {
 
 .work-description__title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   width: 250px;
   font-size: 22px;
   font-weight: normal; }
@@ -1425,7 +1428,8 @@ body {
   font-weight: bold; }
 
 .gallery {
-  padding: 50px 0;
+  padding-top: 90px;
+  padding-bottom: 50px;
   border-bottom: 3px solid #1e7c25;
   background-color: #ebebeb; }
 
