@@ -285,3 +285,12 @@ jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destinatio
 return false
 });
 
+$(document).ready(function() {
+    $('.products__tabs-item').click(function(event) {
+        event.preventDefault();
+        $(this).addClass('products__tabs-item--active');
+        $(this).siblings().removeClass('products__tabs-item--active');
+        var tab = $(this).attr('href');
+        $(".products__slide").not(tab).css('display', 'none');
+        $(tab).fadeIn();
+    });});
