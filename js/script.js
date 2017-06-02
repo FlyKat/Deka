@@ -263,9 +263,13 @@ $(document).ready(function() {
   });
 });
 
-  $('.gallery__img-item').magnificPopup({
-    type:'image'
-  });
+$('.gallery__img-item').magnificPopup({
+  type:'image'
+});
+
+$('.certification__item-img').magnificPopup({
+  type:'image'
+});
 
 $('.results__items').magnificPopup({
   delegate: 'a',
