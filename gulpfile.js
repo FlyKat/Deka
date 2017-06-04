@@ -27,7 +27,8 @@ gulp.task("copy", function() {
       "img/**",
       "js/**",
       "*.html",
-      "*.css"
+      "css/**",
+      "libr/**"
 
     ], {
       base: "."
@@ -47,10 +48,10 @@ gulp.task("style", function() {
         sort: true
       })
     ]))
-    .pipe(gulp.dest("."))
+    .pipe(gulp.dest("css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("."))
+    .pipe(gulp.dest("css"))
     .pipe(server.stream());
 });
 

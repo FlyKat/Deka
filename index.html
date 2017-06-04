@@ -6,8 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
-    <link href="css-plugin/magnific-popup.css" rel="stylesheet">
-    <link href="style.min.css" rel="stylesheet">
+    <link href="libr/jquery.magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -69,7 +69,7 @@
                <div class="action__mark">Акция</div>
                <img src="img/offer-obschaya.jpg" alt="Изображение товара" width="335" height="219">
             </div>
-            <p class="action__text"><span>До 31 мая</span> при заказе канализации &laquo;БиоДека&raquo; под ключ Вы получите в&nbsp;подарок:</p>
+            <p class="action__text"><span>До 30 июня</span> при заказе канализации &laquo;БиоДека&raquo; под ключ Вы получите в&nbsp;подарок:</p>
             <ul class="action__presents">
               <li class="action__present action__present--delivery">
                 Доставка
@@ -86,21 +86,21 @@
             </ul>
             <section class="counter  action__ counter">
               <h3 class="counter__title">До конца <span>акции</span> осталось:</h3>
-              <div class="counter__clock">
+              <div class="counter__clock" id="counter">
                 <div class="counter__clock-item">
-                  <div class="counter__clock-days">19</div>
+                  <div class="counter__clock-days"></div>
                   <div class="counter__clock-label">дней</div>
                 </div>
                 <div class="counter__clock-item counter__clock-item--hours">
-                  <div class="counter__clock-hours">12</div>
+                  <div class="counter__clock-hours"></div>
                   <div class="counter__clock-label">часов</div>
                 </div>
                 <div class="counter__clock-item counter__clock-item--minutes">
-                  <div class="counter__clock-minutes">54</div>
+                  <div class="counter__clock-minutes"></div>
                   <div class="counter__clock-label">минут</div>
                 </div>
                 <div class="counter__clock-item">
-                  <div class="counter__clock-seconds">46</div>
+                  <div class="counter__clock-seconds"></div>
                   <div class="counter__clock-label">секунд</div>
                 </div>
               </div>
@@ -110,8 +110,8 @@
             <p class="application__text application__text--big">Оставьте заявку сейчас,</p>
             <p class="application__text">чтобы узнать подробнее об акции и получить свои подарки </p>
             <form class="application__form">
-              <input class="input  application__form-input" type="text" name="name" id="name" placeholder="Введите Ваше имя*" required>
-              <input class="input  application__form-input" type="tel" name="tel" id="tel" placeholder="Введите телефон*" required>
+              <input class="input  application__form-input" type="text" name="name-application" id="name-application" placeholder="Введите Ваше имя*" required>
+              <input class="input  application__form-input" type="tel" name="te-applicationl" id="tel-application" placeholder="Введите телефон*" required>
               <button class="btn  application__form-btn" type="submit">Узнать об акции подробнее</button>
             </form>
             <p class="application__note">Ваши данные не будут переданы третьим лицам</p>
@@ -1101,16 +1101,16 @@
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">91 100</span> руб.</p>
               <div class="gallery__img">
                <a class="gallery__img-item" href="img/gallery-img/img-20150827-wa0006-compressor.jpg">
-                  <img src="img/gallery-img/img-20150827-wa0006-compressor.png" alt=""width="210" height="210">
+                  <img src="img/gallery-img/img-20150827-wa0006-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="gallery__img-item" href="img/gallery-img/iimg-20150827-wa0003-compressor.jpg">
-                   <img src="img/gallery-img/img-20150827-wa0003-compressor.png" alt=""width="210" height="210">
+                <a class="gallery__img-item" href="img/gallery-img/img-20150827-wa0003-compressor.jpg">
+                   <img src="img/gallery-img/img-20150827-wa0003-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="gallery__img-item" href="img/gallery-img/iimg-20150827-wa0009-compressor.jpg">
-                   <img src="img/gallery-img/img-20150827-wa0009-compressor.png" alt=""width="210" height="210">
+                <a class="gallery__img-item" href="img/gallery-img/img-20150827-wa0009-compressor.jpg">
+                   <img src="img/gallery-img/img-20150827-wa0009-compressor.png" alt="" width="210" height="210">
                 </a>
                 <a class="gallery__img-item" href="img/gallery-img/img-20150827-wa0002-compressor.jpg">
-                   <img src="img/gallery-img/img-20150827-wa0002-compressor.png" alt=""width="210" height="210">
+                   <img src="img/gallery-img/img-20150827-wa0002-compressor.png" alt="" width="210" height="210">
                  </a>
                </div>
             </div>
@@ -1119,17 +1119,17 @@
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>&laquo;Коло Веси 20&raquo;Х2 (спец заказ) и &laquo;Коло Веси 10&raquo;</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span>конфеденциально</p>
               <div class="gallery__img">
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2318-compressor.jpg">
+                  <img src="img/gallery-img/img2318-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2328-compressor.jpg">
+                  <img src="img/gallery-img/img2328-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2335-compressor.jpg">
+                  <img src="img/gallery-img/img2335-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2319-compressor.jpg">
+                  <img src="img/gallery-img/img2319-compressor.png" alt="" width="210" height="210">
                 </a>
               </div>
             </div>
@@ -1138,17 +1138,17 @@
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>&laquo;Коло Веси 20&raquo;Х2 (спец заказ) и &laquo;Коло Веси 10&raquo;</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span>конфеденциально</p>
               <div class="gallery__img">
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2323-compressor.jpg">
+                  <img src="img/gallery-img/img2323-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2337-compressor.jpg">
+                  <img src="img/gallery-img/img2337-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2341-compressor.jpg">
+                  <img src="img/gallery-img/img2341-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2354-compressor.jpg">
+                  <img src="img/gallery-img/img2354-compressor.png" alt="" width="210" height="210">
                  </a>
                </div>
             </div>
@@ -1157,17 +1157,17 @@
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>&laquo;Коло Веси 3&raquo; самотечная</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">99 800</span>руб.</p>
               <div class="gallery__img">
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2025-compressor_QooH7bd.jpg">
+                  <img src="img/gallery-img/20-25-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2032-compressor_dpZZmo3.jpg">
+                  <img src="img/gallery-img/2032-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2051-compressor_byOffkO.jpg">
+                  <img src="img/gallery-img/2051-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2074-compressor_ys8Z9vj.jpg">
+                  <img src="img/gallery-img/2074-compressor.png" alt="" width="210" height="210">
                  </a>
                </div>
             </div>
@@ -1176,17 +1176,17 @@
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>&laquo;Коло Веси 3&raquo; принудительная</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">131 900</span>руб.</p>
               <div class="gallery__img">
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2259-compressor.jpg">
+                  <img src="img/gallery-img/img2259-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2261-compressor.jpg">
+                  <img src="img/gallery-img/img2261-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2265-compressor.jpg">
+                  <img src="img/gallery-img/img2265-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2281-compressor.jpg">
+                  <img src="img/gallery-img/img2281-compressor.png" alt="" width="210" height="210">
                 </a>
               </div>
             </div>
@@ -1195,17 +1195,17 @@
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>&laquo;Коло Веси 5&raquo; принудительная</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">131 900</span>руб.</p>
               <div class="gallery__img">
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2235-wm-compressor.jpg">
+                  <img src="img/gallery-img/img2235-mini1_6JUUf9p.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2218-wm-compressor.jpg">
+                  <img src="img/gallery-img/img2218-mini2-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2243-wm-compressor.jpg">
+                  <img src="img/gallery-img/img2243-mini3-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/img2252-wm-compressor.jpg">
+                  <img src="img/gallery-img/img2252-mini4-compressor.png" alt="" width="210" height="210">
                 </a>
               </div>
             </div>
@@ -1214,17 +1214,17 @@
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>&laquo;Коло Веси 3&raquo; и водоснабжение</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">133 000</span>руб.</p>
               <div class="gallery__img">
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/1.jpg">
+                  <img src="img/gallery-img/1-compressor.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/2.jpg">
+                  <img src="img/gallery-img/2-compressor_C59U92P.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/3.jpg">
+                  <img src="img/gallery-img/3-compressor_9ppshc9.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/4.jpg">
+                  <img src="img/gallery-img/4-compressor.png" alt="" width="210" height="210">
                  </a>
                </div>
             </div>
@@ -1233,17 +1233,17 @@
               <p class="gallery__info"><span class="gallery__info-item">Проект: </span>Энергонезависимый септик 1м<sup>3</sup>с колодцем для доочистки</p>
               <p class="gallery__info"><span class="gallery__info-item">Сумма: </span><span class="gallery__info-price">43 900</span>руб.</p>
               <div class="gallery__img">
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/slide1img1big.jpg">
+                  <img src="img/gallery-img/slide1img1.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/slide1img2big.jpg">
+                  <img src="img/gallery-img/slide1img2.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/slide1img3big.jpg">
+                  <img src="img/gallery-img/slide1img3.png" alt="" width="210" height="210">
                 </a>
-                <a class="" href="#">
-                  <img src="" alt="" width="" height="">
+                <a class="gallery__img-item" href="img/gallery-img/slide1img4big.jpg">
+                  <img src="img/gallery-img/slide1img4.png" alt="" width="210" height="210">
                  </a>
                </div>
             </div>
@@ -1395,8 +1395,8 @@
           <h2 class="consultation__title">Остались вопросы?</h2>
           <p class="consultation__text">Оставьте ваши имя и телефон, чтобы получить бесплатную консультацию по &laquo;БиоДека&raquo;</p>
           <form class="consultation__form">
-            <input class="input  consultation__form-input" type="text" name="name" id="name" placeholder="Ваше имя*" required>
-            <input class="input  consultation__form-input" type="tel" name="tel" id="tel" placeholder="Ваш телефон*" required>
+            <input class="input  consultation__form-input" type="text" name="name-consultation" id="name-consultation" placeholder="Ваше имя*" required>
+            <input class="input  consultation__form-input" type="tel" name="tel-consultation" id="tel-consultation" placeholder="Ваш телефон*" required>
             <button class="btn  consultation__form-btn" type="submit">Получить консультацию</button>
           </form>
           <p class="consultation__note">Ваши данные не будут переданы третьим лицам</p>
@@ -1533,7 +1533,7 @@
         </table>
         <p class="modal-details__slogan">Оставьте заявку сейчас, чтобы&nbsp;получить 20% скидку на&nbsp;монтаж  &laquo;БиоДека 5&raquo; под ключ</p>
         <form class="modal-details__form">
-          <input class="input  modal-details__form-input" type="tel" name="tel" id="tel" pattern="\+7\d\d\d\d\d\d\d\d\d\d" data-mask="+79999999999" placeholder="Ваш телефон*" required>
+          <input class="input  modal-details__form-input" type="tel" name="tel-details-home" id="tel-details-home" placeholder="Ваш телефон*" required>
           <button class="btn  modal-details__form-btn" type="submit">Получить скидку</button>
         </form>
         <p class="modal-details__note">*Предложение действует до 17 апреля 2017 г.</p>
@@ -1586,7 +1586,7 @@
         </table>
         <p class="modal-details__slogan">Оставьте заявку сейчас, чтобы&nbsp;получить 20% скидку на&nbsp;монтаж  &laquo;БиоДека 3&raquo; под ключ</p>
         <form class="modal-details__form">
-          <input class="input  modal-details__form-input" type="tel" name="tel" id="tel" pattern="\+7\d\d\d\d\d\d\d\d\d\d" data-mask="+79999999999" placeholder="Ваш телефон*" required>
+          <input class="input  modal-details__form-input" type="tel" name="tel-details-dacha" id="tel-details-dacha" placeholder="Ваш телефон*" required>
           <button class="btn  modal-details__form-btn" type="submit">Получить скидку</button>
         </form>
         <p class="modal-details__note">*Предложение действует до 17 апреля 2017 г.</p>
@@ -1639,7 +1639,7 @@
         </table>
         <p class="modal-details__slogan">Оставьте заявку сейчас, чтобы&nbsp;получить 20% скидку на&nbsp;монтаж  &laquo;БиоДека 8&raquo; под ключ</p>
         <form class="modal-details__form">
-          <input class="input  modal-details__form-input" type="tel" name="tel" id="tel" pattern="\+7\d\d\d\d\d\d\d\d\d\d" data-mask="+79999999999" placeholder="Ваш телефон*" required>
+          <input class="input  modal-details__form-input" type="tel" name="tel-details-cottage" id="tel-details-cottage" placeholder="Ваш телефон*" required>
           <button class="btn  modal-details__form-btn" type="submit">Получить скидку</button>
         </form>
         <p class="modal-details__note">*Предложение действует до 17 апреля 2017 г.</p>
@@ -1649,8 +1649,8 @@
       <p class="modal-estimate__text modal-estimate__text--big">Оставьте заявку,</p>
       <p class="modal-estimate__text">чтобы получить бесплатный расчет сметы</p>
       <form class="modal-estimate__form-input">
-        <input class=" input modal-estimate__form-input" type="text" name="name" placeholder="Ваше имя*" required>
-        <input class="input  modal-estimate__form-input" type="tel" name="tel" id="tel" pattern="\+7\d\d\d\d\d\d\d\d\d\d" data-mask="+79999999999"placeholder="Ваш телефон*" required>
+        <input class=" input modal-estimate__form-input" type="text" name="name-estimate" id="name-estimate" placeholder="Ваше имя*" required>
+        <input class="input  modal-estimate__form-input" type="tel" name="tel-estimate" id="tel-estimate" placeholder="Ваш телефон*" required>
         <button class="btn  modal-estimate__form-btn" type="submit">Получить смету сейчас</button>
       </form>
     </div>
@@ -1659,7 +1659,7 @@
       <p class="modal-order__text modal-order__text--big">Оставьте заявку,</p>
       <p class="modal-order__text">чтобы узнать подробнее о выбранном предложении</p>
       <form class="modal-order__form-input">
-        <input class="input  modal-order__form-input" type="tel" name="tel" id="tel" pattern="\+7\d\d\d\d\d\d\d\d\d\d" data-mask="+79999999999" placeholder="Ваш телефон*" required>
+        <input class="input  modal-order__form-input" type="tel" name="tel-order" id="tel-order" placeholder="Ваш телефон*" required>
         <button class="btn  modal-order__form-btn" type="submit">Узнать подробнее</button>
       </form>
     </div>
@@ -1668,8 +1668,8 @@
       <p class="modal-consultation__text modal-consultation__text--big">Оставьте заявку,</p>
       <p class="modal-consultation__text">и мы подробно проконсультируем вас по этой станции</p>
       <form class="modal-consultation__form-input">
-        <input class=" input modal-consultation__form-input" type="text" name="name" placeholder="Ваше имя*" required>
-        <input class="input  modal-consultation__form-input" type="tel" name="tel" id="tel" pattern="\+7\d\d\d\d\d\d\d\d\d\d" data-mask="+79999999999"placeholder="Ваш телефон*" required>
+        <input class=" input modal-consultation__form-input" type="text" name="name-modal-consultation" placeholder="Ваше имя*" required>
+        <input class="input  modal-consultation__form-input" type="tel" name="tel-modal-consultation" id="tel-modal-consultation" placeholder="Ваш телефон*" required>
         <button class="btn  modal-consultation__form-btn" type="submit">Получить бесплатную консультацию</button>
       </form>
     </div>
@@ -1678,8 +1678,8 @@
       <p class="modal-help__text modal-help__text--big">Оставьте заявку,</p>
       <p class="modal-help__text">и мы поможем вам выбрать из широкого ассортимента станций &laquo;БиоДека 8&raquo;</p>
       <form class="modal-hepl__form-input">
-        <input class=" input modal-help__form-input" type="text" name="name" placeholder="Ваше имя*" required>
-        <input class="input  modal-help__form-input" type="tel" name="tel" id="tel" pattern="\+7\d\d\d\d\d\d\d\d\d\d" data-mask="+79999999999" placeholder="Ваш телефон*" required>
+        <input class=" input modal-help__form-input" type="text" name="name-help"  id="name-help" placeholder="Ваше имя*" required>
+        <input class="input  modal-help__form-input" type="tel" name="tel-help" id="tel-help" placeholder="Ваш телефон*" required>
         <button class="btn  modal-help__form-btn" type="submit">Подобрать БиоДеку для моего дома</button>
       </form>
     </div>
@@ -1687,8 +1687,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
     <script src="//api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
     <!--<script src="js/jump.js"></script>-->
-    <script src="jquery/jquery-3.2.1.min.js"></script>
-    <script src="jquery/jquery.magnific-popup.min.js"></script>
+    <script src="libr/jquery/jquery-3.2.1.min.js"></script>
+    <script src="libr/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="libr/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
