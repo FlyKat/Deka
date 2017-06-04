@@ -1,3 +1,4 @@
+//map
 ymaps.ready(init);
 
 function init() {
@@ -27,7 +28,7 @@ function init() {
   myMap.geoObjects.add(myPlacemark);
 }
 
-
+//modal windows
 var estimate = document.querySelector('.page-header__offer-btn');
 var popupEstimate = document.querySelector('.modal-estimate');
 var overlay = document.querySelector('.overlay');
@@ -54,7 +55,6 @@ window.addEventListener('keydown', function(event) {
       }
     }
 });
-
 
 
 var order = document.querySelectorAll('.ready-product__order-btn');
@@ -86,7 +86,6 @@ window.addEventListener('keydown', function(event) {
       }
     }
 });
-
 
 
 var consultation = document.querySelectorAll('.product__btn');
@@ -145,7 +144,6 @@ window.addEventListener('keydown', function(event) {
       }
     }
 });
-
 
 
 var detailsHome = document.querySelector('.ready-product__btn-details--home');
@@ -229,6 +227,7 @@ window.addEventListener('keydown', function(event) {
 });
 
 
+//sliders
 var gallerySwiper = new Swiper('.gallery__inner', {
         pagination: '.swiper-pagination',
         nextButton: '.swiper-button-next',
@@ -256,7 +255,7 @@ var certificationSwiper = new Swiper('.certification__list-container', {
         loop: true
     });
 
-
+//popup for img
 $(document).ready(function() {
   $('.reviews__img-item').magnificPopup({
     type:'image'
@@ -278,6 +277,7 @@ $('.results__items').magnificPopup({
 });
 
 
+//scroll
 $("a.scrollto").click(function() {
 var elementClick = $(this).attr("href")
 var destination = $(elementClick).offset().top;
@@ -285,6 +285,7 @@ jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destinatio
 return false
 });
 
+//tabs
 $(document).ready(function() {
     $('.products__tabs-item').click(function(event) {
         event.preventDefault();
@@ -294,3 +295,60 @@ $(document).ready(function() {
         $(".products__slide").not(tab).css('display', 'none');
         $(tab).fadeIn();
     });});
+
+//tel mask
+jQuery(function($){
+   $('#tel-estimate').mask('+7(999) 999-9999');
+   $('#tel-application').mask('+7(999) 999-9999');
+   $('#tel-details-home').mask('+7(999) 999-9999');
+   $('#tel-details-dacha').mask('+7(999) 999-9999');
+   $('#tel-details-cottage').mask('+7(999) 999-9999');
+   $('#tel-order').mask('+7(999) 999-9999');
+   $('#tel-modal-consultation').mask('+7(999) 999-9999');
+   $('#tel-help').mask('+7(999) 999-9999');
+   $('#tel-consultation').mask('+7(999) 999-9999');
+   });
+
+
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+//counter-сlock
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.counter__clock-days');
+  var hoursSpan = clock.querySelector('.counter__clock-hours');
+  var minutesSpan = clock.querySelector('.counter__clock-minutes');
+  var secondsSpan = clock.querySelector('.counter__clock-seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date()) + 25 * 24 * 60 * 60 * 1000);
+initializeClock('counter', deadline);
